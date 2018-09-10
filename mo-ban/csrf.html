@@ -1,0 +1,1200 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>2.9. CSRF  · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-anchor-navigation-ex/style/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-ace/ace.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search-pro/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-emphasize/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-splitter/splitter.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="../shu-ju-ku.html" />
+    
+    
+    <link rel="prev" href="flask-wtfbiao-dan.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Flask框架
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../shi-tu-ji-lu-you.html">
+            
+                <a href="../shi-tu-ji-lu-you.html">
+            
+                    
+                    1. 视图及路由 
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../shi-tu-ji-lu-you/flaskjian-jie.html">
+            
+                <a href="../shi-tu-ji-lu-you/flaskjian-jie.html">
+            
+                    
+                    1.1. Flask简介 
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="../shi-tu-ji-lu-you/flaskhuan-jing-an-zhuang.html">
+            
+                <a href="../shi-tu-ji-lu-you/flaskhuan-jing-an-zhuang.html">
+            
+                    
+                    1.2. 虚拟环境 
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="../shi-tu-ji-lu-you/helloworld.html">
+            
+                <a href="../shi-tu-ji-lu-you/helloworld.html">
+            
+                    
+                    1.3. HelloWorld 
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4" data-path="../shi-tu-ji-lu-you/xiang-guan-pei-zhi-can-shu.html">
+            
+                <a href="../shi-tu-ji-lu-you/xiang-guan-pei-zhi-can-shu.html">
+            
+                    
+                    1.4. 相关配置参数 
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5" data-path="../shi-tu-ji-lu-you/lu-you-de-ge-zhong-ding-yi.html">
+            
+                <a href="../shi-tu-ji-lu-you/lu-you-de-ge-zhong-ding-yi.html">
+            
+                    
+                    1.5. 路由基本定义 
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.6" data-path="../shi-tu-ji-lu-you/shi-tu-chang-yong-luo-ji.html">
+            
+                <a href="../shi-tu-ji-lu-you/shi-tu-chang-yong-luo-ji.html">
+            
+                    
+                    1.6. 视图常用逻辑 
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.7" data-path="../shi-tu-ji-lu-you/zheng-ze-pi-pei-lu-you.html">
+            
+                <a href="../shi-tu-ji-lu-you/zheng-ze-pi-pei-lu-you.html">
+            
+                    
+                    1.7. 正则匹配路由 
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.8" data-path="../shi-tu-ji-lu-you/yi-chang-bu-huo.html">
+            
+                <a href="../shi-tu-ji-lu-you/yi-chang-bu-huo.html">
+            
+                    
+                    1.8. 异常捕获 
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.9" data-path="../shi-tu-ji-lu-you/qing-qiu-gou-zi.html">
+            
+                <a href="../shi-tu-ji-lu-you/qing-qiu-gou-zi.html">
+            
+                    
+                    1.9. 请求勾子 
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.10" data-path="../shi-tu-ji-lu-you/flaskzhuang-shi-qi-lu-you-ju-ti-shi-xian.html">
+            
+                <a href="../shi-tu-ji-lu-you/flaskzhuang-shi-qi-lu-you-ju-ti-shi-xian.html">
+            
+                    
+                    1.10. 装饰器路由具体实现 
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.11" data-path="../shi-tu-ji-lu-you/huo-qu-qing-qiu-can-shu.html">
+            
+                <a href="../shi-tu-ji-lu-you/huo-qu-qing-qiu-can-shu.html">
+            
+                    
+                    1.11. 获取请求参数 
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.12" data-path="../shi-tu-ji-lu-you/zhuang-tai-bao-chi.html">
+            
+                <a href="../shi-tu-ji-lu-you/zhuang-tai-bao-chi.html">
+            
+                    
+                    1.12. 状态保持 
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.12.1" data-path="../shi-tu-ji-lu-you/zhuang-tai-bao-chi/cookie.html">
+            
+                <a href="../shi-tu-ji-lu-you/zhuang-tai-bao-chi/cookie.html">
+            
+                    
+                    1.12.1. Cookie 
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.12.2" data-path="../shi-tu-ji-lu-you/zhuang-tai-bao-chi/session.html">
+            
+                <a href="../shi-tu-ji-lu-you/zhuang-tai-bao-chi/session.html">
+            
+                    
+                    1.12.2. Session 
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.13" data-path="../shi-tu-ji-lu-you/shang-xia-wen.html">
+            
+                <a href="../shi-tu-ji-lu-you/shang-xia-wen.html">
+            
+                    
+                    1.13. 上下文 
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.14" data-path="../shi-tu-ji-lu-you/flask-script.html">
+            
+                <a href="../shi-tu-ji-lu-you/flask-script.html">
+            
+                    
+                    1.14. Flask-Script 
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../mo-ban.html">
+            
+                <a href="../mo-ban.html">
+            
+                    
+                    2. 模板 
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="jinja2mo-ban-yin-qing.html">
+            
+                <a href="jinja2mo-ban-yin-qing.html">
+            
+                    
+                    2.1. Jinja2简介 
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="jinja2mo-ban-yin-qing-shi-yong.html">
+            
+                <a href="jinja2mo-ban-yin-qing-shi-yong.html">
+            
+                    
+                    2.2. 模板的使用 
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="guo-lv-qi.html">
+            
+                <a href="guo-lv-qi.html">
+            
+                    
+                    2.3. 过滤器 
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4" data-path="zi-ding-yi-guo-lv-qi.html">
+            
+                <a href="zi-ding-yi-guo-lv-qi.html">
+            
+                    
+                    2.4. 自定义过滤器 
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5" data-path="kong-zhi-dai-ma-kuai.html">
+            
+                <a href="kong-zhi-dai-ma-kuai.html">
+            
+                    
+                    2.5. 控制代码块 
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.6" data-path="mo-ban-dai-ma-fu-yong.html">
+            
+                <a href="mo-ban-dai-ma-fu-yong.html">
+            
+                    
+                    2.6. 模板代码复用 
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.6.1" data-path="mo-ban-dai-ma-fu-yong/hong.html">
+            
+                <a href="mo-ban-dai-ma-fu-yong/hong.html">
+            
+                    
+                    2.6.1. 宏 
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.6.2" data-path="mo-ban-dai-ma-fu-yong/ji-cheng.html">
+            
+                <a href="mo-ban-dai-ma-fu-yong/ji-cheng.html">
+            
+                    
+                    2.6.2. 继承 
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.6.3" data-path="mo-ban-dai-ma-fu-yong/bao-han.html">
+            
+                <a href="mo-ban-dai-ma-fu-yong/bao-han.html">
+            
+                    
+                    2.6.3. 包含 
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.7" data-path="te-you-bian-liang-he-han-shu.html">
+            
+                <a href="te-you-bian-liang-he-han-shu.html">
+            
+                    
+                    2.7. 特有变量和函数 
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.8" data-path="flask-wtfbiao-dan.html">
+            
+                <a href="flask-wtfbiao-dan.html">
+            
+                    
+                    2.8. Flask-WTF表单 
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.3.9" data-path="csrf.html">
+            
+                <a href="csrf.html">
+            
+                    
+                    2.9. CSRF 
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../shu-ju-ku.html">
+            
+                <a href="../shu-ju-ku.html">
+            
+                    
+                    3. 数据库 
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="../shu-ju-ku/orm.html">
+            
+                <a href="../shu-ju-ku/orm.html">
+            
+                    
+                    3.1. ORM 
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="../shu-ju-ku/flask-sqlalchemyan-zhuang-ji-she-zhi.html">
+            
+                <a href="../shu-ju-ku/flask-sqlalchemyan-zhuang-ji-she-zhi.html">
+            
+                    
+                    3.2. Flask-SQLAlchemy安装及配置 
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3" data-path="../shu-ju-ku/shu-ju-ku-de-ji-ben-cao-zuo.html">
+            
+                <a href="../shu-ju-ku/shu-ju-ku-de-ji-ben-cao-zuo.html">
+            
+                    
+                    3.3. 数据库的基本操作 
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.4" data-path="../shu-ju-ku/zong-he-an-4f8b-tu-shu-guan-li.html">
+            
+                <a href="../shu-ju-ku/zong-he-an-4f8b-tu-shu-guan-li.html">
+            
+                    
+                    3.4. 综合案例-图书管理 
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.4.1" data-path="../shu-ju-ku/zong-he-an-4f8b-tu-shu-guan-li/ding-yi-mo-xing.html">
+            
+                <a href="../shu-ju-ku/zong-he-an-4f8b-tu-shu-guan-li/ding-yi-mo-xing.html">
+            
+                    
+                    3.4.1. 定义模型 
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.4.2" data-path="../shu-ju-ku/zong-he-an-4f8b-tu-shu-guan-li/shu-ju-ku-biao-chuang-5efa26-ce-shi-shu-ju-tian-jia.html">
+            
+                <a href="../shu-ju-ku/zong-he-an-4f8b-tu-shu-guan-li/shu-ju-ku-biao-chuang-5efa26-ce-shi-shu-ju-tian-jia.html">
+            
+                    
+                    3.4.2. 数据库表创建 &测试数据添加 
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.4.3" data-path="../shu-ju-ku/zong-he-an-4f8b-tu-shu-guan-li/shu-ju-xian-793a26-biao-dan-tian-jia.html">
+            
+                <a href="../shu-ju-ku/zong-he-an-4f8b-tu-shu-guan-li/shu-ju-xian-793a26-biao-dan-tian-jia.html">
+            
+                    
+                    3.4.3. 数据显示 &表单添加 
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.4.4" data-path="../shu-ju-ku/zong-he-an-4f8b-tu-shu-guan-li/biao-dan-yan-zheng.html">
+            
+                <a href="../shu-ju-ku/zong-he-an-4f8b-tu-shu-guan-li/biao-dan-yan-zheng.html">
+            
+                    
+                    3.4.4. 表单验证 
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.4.5" data-path="../shu-ju-ku/zong-he-an-4f8b-tu-shu-guan-li/shan-chu-shu-ju.html">
+            
+                <a href="../shu-ju-ku/zong-he-an-4f8b-tu-shu-guan-li/shan-chu-shu-ju.html">
+            
+                    
+                    3.4.5. 删除数据 
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.5" data-path="../shu-ju-ku/duo-dui-duo-yan-lian.html">
+            
+                <a href="../shu-ju-ku/duo-dui-duo-yan-lian.html">
+            
+                    
+                    3.5. 多对多演练 
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.6" data-path="../shu-ju-ku/shu-ju-ku-qian-yi.html">
+            
+                <a href="../shu-ju-ku/shu-ju-ku-qian-yi.html">
+            
+                    
+                    3.6. 数据库迁移 
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.7" data-path="../shu-ju-ku/qi-ta.html">
+            
+                <a href="../shu-ju-ku/qi-ta.html">
+            
+                    
+                    3.7. 信号机制 
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.8" data-path="../shu-ju-ku/chang-jian-guan-xi-mo-ban-dai-ma.html">
+            
+                <a href="../shu-ju-ku/chang-jian-guan-xi-mo-ban-dai-ma.html">
+            
+                    
+                    3.8. 常见关系模板代码 
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../lan-tu-dan-yuan-ce-shi.html">
+            
+                <a href="../lan-tu-dan-yuan-ce-shi.html">
+            
+                    
+                    4. 蓝图 &单元测试 
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="../lan-tu-dan-yuan-ce-shi/lan-tu.html">
+            
+                <a href="../lan-tu-dan-yuan-ce-shi/lan-tu.html">
+            
+                    
+                    4.1. 蓝图 
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="../lan-tu-dan-yuan-ce-shi/dan-yuan-ce-shi.html">
+            
+                <a href="../lan-tu-dan-yuan-ce-shi/dan-yuan-ce-shi.html">
+            
+                    
+                    4.2. 单元测试 
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >2.9. CSRF </a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <div id="anchor-navigation-ex-navbar"><i class="fa fa-anchor"></i><ul><li><span class="title-icon "></span><a href="#csrf"><b>1. </b>CSRF</a></li><ul><li><span class="title-icon "></span><a href="#csrf&#x653B;&#x51FB;&#x793A;&#x610F;&#x56FE;"><b>1.1. </b>CSRF&#x653B;&#x51FB;&#x793A;&#x610F;&#x56FE;</a></li><li><span class="title-icon "></span><a href="#&#x9632;&#x6B62;-csrf-&#x653B;&#x51FB;"><b>1.2. </b>&#x9632;&#x6B62; CSRF &#x653B;&#x51FB;</a></li><ul><li><span class="title-icon "></span><a href="#&#x6B65;&#x9AA4;"><b>1.2.1. </b>&#x6B65;&#x9AA4;</a></li><li><span class="title-icon "></span><a href="#&#x4EE3;&#x7801;&#x6F14;&#x793A;"><b>1.2.2. </b>&#x4EE3;&#x7801;&#x6F14;&#x793A;</a></li></ul><li><span class="title-icon "></span><a href="#&#x5728;-flask-&#x9879;&#x76EE;&#x4E2D;&#x89E3;&#x51B3;-csrf-&#x653B;&#x51FB;"><b>1.3. </b>&#x5728; Flask &#x9879;&#x76EE;&#x4E2D;&#x89E3;&#x51B3; CSRF &#x653B;&#x51FB;</a></li><ul><li><span class="title-icon "></span><a href="#&#x5728;-flaskform-&#x4E2D;&#x5B9E;&#x73B0;&#x6821;&#x9A8C;"><b>1.3.1. </b>&#x5728; FlaskForm &#x4E2D;&#x5B9E;&#x73B0;&#x6821;&#x9A8C;</a></li><li><span class="title-icon "></span><a href="#&#x5355;&#x72EC;&#x4F7F;&#x7528;"><b>1.3.2. </b>&#x5355;&#x72EC;&#x4F7F;&#x7528;</a></li></ul></ul></ul></div><a href="#csrf" id="anchorNavigationExGoTop"><i class="fa fa-arrow-up"></i></a><h1 id="csrf"><a name="csrf" class="anchor-navigation-ex-anchor" href="#csrf"><i class="fa fa-link" aria-hidden="true"></i></a>1. CSRF</h1>
+<ul>
+<li><code>CSRF</code>&#x5168;&#x62FC;&#x4E3A;<code>Cross Site Request Forgery</code>&#xFF0C;&#x8BD1;&#x4E3A;&#x8DE8;&#x7AD9;&#x8BF7;&#x6C42;&#x4F2A;&#x9020;&#x3002;</li>
+<li><code>CSRF</code>&#x6307;&#x653B;&#x51FB;&#x8005;&#x76D7;&#x7528;&#x4E86;&#x4F60;&#x7684;&#x8EAB;&#x4EFD;&#xFF0C;&#x4EE5;&#x4F60;&#x7684;&#x540D;&#x4E49;&#x53D1;&#x9001;&#x6076;&#x610F;&#x8BF7;&#x6C42;&#x3002;<ul>
+<li>&#x5305;&#x62EC;&#xFF1A;&#x4EE5;&#x4F60;&#x540D;&#x4E49;&#x53D1;&#x9001;&#x90AE;&#x4EF6;&#xFF0C;&#x53D1;&#x6D88;&#x606F;&#xFF0C;&#x76D7;&#x53D6;&#x4F60;&#x7684;&#x8D26;&#x53F7;&#xFF0C;&#x751A;&#x81F3;&#x4E8E;&#x8D2D;&#x4E70;&#x5546;&#x54C1;&#xFF0C;&#x865A;&#x62DF;&#x8D27;&#x5E01;&#x8F6C;&#x8D26;......</li>
+</ul>
+</li>
+<li>&#x9020;&#x6210;&#x7684;&#x95EE;&#x9898;&#xFF1A;&#x4E2A;&#x4EBA;&#x9690;&#x79C1;&#x6CC4;&#x9732;&#x4EE5;&#x53CA;&#x8D22;&#x4EA7;&#x5B89;&#x5168;&#x3002;</li>
+</ul>
+<h2 id="csrf&#x653B;&#x51FB;&#x793A;&#x610F;&#x56FE;"><a name="csrf&#x653B;&#x51FB;&#x793A;&#x610F;&#x56FE;" class="anchor-navigation-ex-anchor" href="#csrf&#x653B;&#x51FB;&#x793A;&#x610F;&#x56FE;"><i class="fa fa-link" aria-hidden="true"></i></a>1.1. CSRF&#x653B;&#x51FB;&#x793A;&#x610F;&#x56FE;</h2>
+<ul>
+<li>&#x5BA2;&#x6237;&#x7AEF;&#x8BBF;&#x95EE;&#x670D;&#x52A1;&#x5668;&#x65F6;&#x6CA1;&#x6709;&#x540C;&#x670D;&#x52A1;&#x5668;&#x505A;&#x5B89;&#x5168;&#x9A8C;&#x8BC1;</li>
+</ul>
+<p><img src="../assets/CSRF&#x653B;&#x51FB;&#x8FC7;&#x7A0B;.png" alt=""></p>
+<h2 id="&#x9632;&#x6B62;-csrf-&#x653B;&#x51FB;"><a name="&#x9632;&#x6B62;-csrf-&#x653B;&#x51FB;" class="anchor-navigation-ex-anchor" href="#&#x9632;&#x6B62;-csrf-&#x653B;&#x51FB;"><i class="fa fa-link" aria-hidden="true"></i></a>1.2. &#x9632;&#x6B62; CSRF &#x653B;&#x51FB;</h2>
+<h3 id="&#x6B65;&#x9AA4;"><a name="&#x6B65;&#x9AA4;" class="anchor-navigation-ex-anchor" href="#&#x6B65;&#x9AA4;"><i class="fa fa-link" aria-hidden="true"></i></a>1.2.1. &#x6B65;&#x9AA4;</h3>
+<ol>
+<li>&#x5728;&#x5BA2;&#x6237;&#x7AEF;&#x5411;&#x540E;&#x7AEF;&#x8BF7;&#x6C42;&#x754C;&#x9762;&#x6570;&#x636E;&#x7684;&#x65F6;&#x5019;&#xFF0C;&#x540E;&#x7AEF;&#x4F1A;&#x5F80;&#x54CD;&#x5E94;&#x4E2D;&#x7684; cookie &#x4E2D;&#x8BBE;&#x7F6E; csrf_token &#x7684;&#x503C;</li>
+<li>&#x5728; Form &#x8868;&#x5355;&#x4E2D;&#x6DFB;&#x52A0;&#x4E00;&#x4E2A;&#x9690;&#x85CF;&#x7684;&#x7684;&#x5B57;&#x6BB5;&#xFF0C;&#x503C;&#x4E5F;&#x662F; csrf_token</li>
+<li>&#x5728;&#x7528;&#x6237;&#x70B9;&#x51FB;&#x63D0;&#x4EA4;&#x7684;&#x65F6;&#x5019;&#xFF0C;&#x4F1A;&#x5E26;&#x4E0A;&#x8FD9;&#x4E24;&#x4E2A;&#x503C;&#x5411;&#x540E;&#x53F0;&#x53D1;&#x8D77;&#x8BF7;&#x6C42;</li>
+<li>&#x540E;&#x7AEF;&#x63A5;&#x53D7;&#x5230;&#x8BF7;&#x6C42;&#xFF0C;&#x4EE5;&#x4F1A;&#x4EE5;&#x4E0B;&#x51E0;&#x4EF6;&#x4E8B;&#x4EF6;&#xFF1A;<ul>
+<li>&#x4ECE; cookie&#x4E2D;&#x53D6;&#x51FA; csrf_token</li>
+<li>&#x4ECE; &#x8868;&#x5355;&#x6570;&#x636E;&#x4E2D;&#x53D6;&#x51FA;&#x6765;&#x9690;&#x85CF;&#x7684; csrf_token &#x7684;&#x503C;</li>
+<li>&#x8FDB;&#x884C;&#x5BF9;&#x6BD4;</li>
+</ul>
+</li>
+<li>&#x5982;&#x679C;&#x6BD4;&#x8F83;&#x4E4B;&#x540E;&#x4E24;&#x503C;&#x4E00;&#x6837;&#xFF0C;&#x90A3;&#x4E48;&#x4EE3;&#x8868;&#x662F;&#x6B63;&#x5E38;&#x7684;&#x8BF7;&#x6C42;&#xFF0C;&#x5982;&#x679C;&#x6CA1;&#x53D6;&#x5230;&#x6216;&#x8005;&#x6BD4;&#x8F83;&#x4E0D;&#x4E00;&#x6837;&#xFF0C;&#x4EE3;&#x8868;&#x4E0D;&#x662F;&#x6B63;&#x5E38;&#x7684;&#x8BF7;&#x6C42;&#xFF0C;&#x4E0D;&#x6267;&#x884C;&#x4E0B;&#x4E00;&#x6B65;&#x64CD;&#x4F5C;</li>
+</ol>
+<h3 id="&#x4EE3;&#x7801;&#x6F14;&#x793A;"><a name="&#x4EE3;&#x7801;&#x6F14;&#x793A;" class="anchor-navigation-ex-anchor" href="#&#x4EE3;&#x7801;&#x6F14;&#x793A;"><i class="fa fa-link" aria-hidden="true"></i></a>1.2.2. &#x4EE3;&#x7801;&#x6F14;&#x793A;</h3>
+<h4 id="&#x672A;&#x8FDB;&#x884C;-csrf-&#x6821;&#x9A8C;&#x7684;-weba"><a name="&#x672A;&#x8FDB;&#x884C;-csrf-&#x6821;&#x9A8C;&#x7684;-weba" class="anchor-navigation-ex-anchor" href="#&#x672A;&#x8FDB;&#x884C;-csrf-&#x6821;&#x9A8C;&#x7684;-weba"><i class="fa fa-link" aria-hidden="true"></i></a>&#x672A;&#x8FDB;&#x884C; csrf &#x6821;&#x9A8C;&#x7684; WebA</h4>
+<ul>
+<li>&#x540E;&#x7AEF;&#x4EE3;&#x7801;&#x5B9E;&#x73B0;</li>
+</ul>
+<div class="ace"><div class="aceCode" data-config="{&quot;edit&quot;:true,&quot;lang&quot;:&quot;python&quot;,&quot;check&quot;:false,&quot;theme&quot;:false}">from flask import Flask, render_template, make_response
+    from flask import redirect
+    from flask import request
+    from flask import url_for
+
+    app = Flask(__name__)
+
+
+    @app.route(&apos;/&apos;, methods=[&quot;POST&quot;, &quot;GET&quot;])
+    def index():
+        if request.method == &quot;POST&quot;:
+            # &#x53D6;&#x5230;&#x8868;&#x5355;&#x4E2D;&#x63D0;&#x4EA4;&#x4E0A;&#x6765;&#x7684;&#x53C2;&#x6570;
+            username = request.form.get(&quot;username&quot;)
+            password = request.form.get(&quot;password&quot;)
+
+            if not all([username, password]):
+                print(&apos;&#x53C2;&#x6570;&#x9519;&#x8BEF;&apos;)
+            else:
+                print(username, password)
+                if username == &apos;laowang&apos; and password == &apos;1234&apos;:
+                    # &#x72B6;&#x6001;&#x4FDD;&#x6301;&#xFF0C;&#x8BBE;&#x7F6E;&#x7528;&#x6237;&#x540D;&#x5230;cookie&#x4E2D;&#x8868;&#x793A;&#x767B;&#x5F55;&#x6210;&#x529F;
+                    response = redirect(url_for(&apos;transfer&apos;))
+                    response.set_cookie(&apos;username&apos;, username)
+                    return response
+                else:
+                    print(&apos;&#x5BC6;&#x7801;&#x9519;&#x8BEF;&apos;)
+
+        return render_template(&apos;temp_login.html&apos;)
+
+
+    @app.route(&apos;/transfer&apos;, methods=[&quot;POST&quot;, &quot;GET&quot;])
+    def transfer():
+        # &#x4ECE;cookie&#x4E2D;&#x53D6;&#x5230;&#x7528;&#x6237;&#x540D;
+        username = request.cookies.get(&apos;username&apos;, None)
+        # &#x5982;&#x679C;&#x6CA1;&#x6709;&#x53D6;&#x5230;&#xFF0C;&#x4EE3;&#x8868;&#x6CA1;&#x6709;&#x767B;&#x5F55;
+        if not username:
+            return redirect(url_for(&apos;index&apos;))
+
+        if request.method == &quot;POST&quot;:
+            to_account = request.form.get(&quot;to_account&quot;)
+            money = request.form.get(&quot;money&quot;)
+            print(&apos;&#x5047;&#x88C5;&#x6267;&#x884C;&#x8F6C;&#x64CD;&#x4F5C;&#xFF0C;&#x5C06;&#x5F53;&#x524D;&#x767B;&#x5F55;&#x7528;&#x6237;&#x7684;&#x94B1;&#x8F6C;&#x8D26;&#x5230;&#x6307;&#x5B9A;&#x8D26;&#x6237;&apos;)
+            return &apos;&#x8F6C;&#x8D26; %s &#x5143;&#x5230; %s &#x6210;&#x529F;&apos; % (money, to_account)
+
+        # &#x6E32;&#x67D3;&#x8F6C;&#x6362;&#x9875;&#x9762;
+        response = make_response(render_template(&apos;temp_transfer.html&apos;))
+        return response
+
+    if __name__ == &apos;__main__&apos;:
+        app.run(debug=True, port=9000)<br></div></div>
+
+<ul>
+<li>&#x524D;&#x7AEF;&#x767B;&#x5F55;&#x9875;&#x9762;&#x4EE3;&#x7801;</li>
+</ul>
+<div class="ace"><div class="aceCode" data-config="{&quot;edit&quot;:true,&quot;lang&quot;:&quot;python&quot;,&quot;check&quot;:false,&quot;theme&quot;:false}">&lt;!DOCTYPE html&gt;
+    &amp;lt;html lang=&quot;en&quot;&amp;gt;
+    &amp;lt;head&amp;gt;
+        &amp;lt;meta charset=&quot;UTF-8&quot;&amp;gt;
+        &amp;lt;title&amp;gt;&#x767B;&#x5F55;&amp;lt;/title&amp;gt;
+    &amp;lt;/head&amp;gt;
+    &amp;lt;body&amp;gt;
+
+    &amp;lt;h1&amp;gt;&#x6211;&#x662F;&#x7F51;&#x7AD9;A&#xFF0C;&#x767B;&#x5F55;&#x9875;&#x9762;&amp;lt;/h1&amp;gt;
+
+    &amp;lt;form method=&quot;post&quot;&amp;gt;
+        &amp;lt;label&amp;gt;&#x7528;&#x6237;&#x540D;&#xFF1A;&amp;lt;/label&amp;gt;&amp;lt;input type=&quot;text&quot; name=&quot;username&quot; placeholder=&quot;&#x8BF7;&#x8F93;&#x5165;&#x7528;&#x6237;&#x540D;&quot;&amp;gt;&amp;lt;br/&amp;gt;
+        &amp;lt;label&amp;gt;&#x5BC6;&#x7801;&#xFF1A;&amp;lt;/label&amp;gt;&amp;lt;input type=&quot;password&quot; name=&quot;password&quot; placeholder=&quot;&#x8BF7;&#x8F93;&#x5165;&#x5BC6;&#x7801;&quot;&amp;gt;&amp;lt;br/&amp;gt;
+        &amp;lt;input type=&quot;submit&quot; value=&quot;&#x767B;&#x5F55;&quot;&amp;gt;
+    &amp;lt;/form&amp;gt;
+
+    &amp;lt;/body&amp;gt;
+    &amp;lt;/html&amp;gt;<br></div></div>
+
+<ul>
+<li>&#x524D;&#x7AEF;&#x8F6C;&#x8D26;&#x9875;&#x9762;&#x4EE3;&#x7801;</li>
+</ul>
+<div class="ace"><div class="aceCode" data-config="{&quot;edit&quot;:true,&quot;lang&quot;:&quot;python&quot;,&quot;check&quot;:false,&quot;theme&quot;:false}">&lt;!DOCTYPE html&gt;
+    &amp;lt;html lang=&quot;en&quot;&amp;gt;
+    &amp;lt;head&amp;gt;
+        &amp;lt;meta charset=&quot;UTF-8&quot;&amp;gt;
+        &amp;lt;title&amp;gt;&#x8F6C;&#x8D26;&amp;lt;/title&amp;gt;
+    &amp;lt;/head&amp;gt;
+    &amp;lt;body&amp;gt;
+    &amp;lt;h1&amp;gt;&#x6211;&#x662F;&#x7F51;&#x7AD9;A&#xFF0C;&#x8F6C;&#x8D26;&#x9875;&#x9762;&amp;lt;/h1&amp;gt;
+
+    &amp;lt;form method=&quot;post&quot;&amp;gt;
+        &amp;lt;label&amp;gt;&#x8D26;&#x6237;&#xFF1A;&amp;lt;/label&amp;gt;&amp;lt;input type=&quot;text&quot; name=&quot;to_account&quot; placeholder=&quot;&#x8BF7;&#x8F93;&#x5165;&#x8981;&#x8F6C;&#x8D26;&#x7684;&#x8D26;&#x6237;&quot;&amp;gt;&amp;lt;br/&amp;gt;
+        &amp;lt;label&amp;gt;&#x91D1;&#x989D;&#xFF1A;&amp;lt;/label&amp;gt;&amp;lt;input type=&quot;number&quot; name=&quot;money&quot; placeholder=&quot;&#x8BF7;&#x8F93;&#x5165;&#x8F6C;&#x8D26;&#x91D1;&#x989D;&quot;&amp;gt;&amp;lt;br/&amp;gt;
+        &amp;lt;input type=&quot;submit&quot; value=&quot;&#x8F6C;&#x8D26;&quot;&amp;gt;
+    &amp;lt;/form&amp;gt;
+
+    &amp;lt;/body&amp;gt;
+    &amp;lt;/html&amp;gt;<br></div></div>
+
+<blockquote>
+<p>&#x8FD0;&#x884C;&#x6D4B;&#x8BD5;&#xFF0C;&#x5982;&#x679C;&#x5728;&#x672A;&#x767B;&#x5F55;&#x7684;&#x60C5;&#x51B5;&#x4E0B;&#xFF0C;&#x4E0D;&#x80FD;&#x76F4;&#x63A5;&#x8FDB;&#x5165;&#x8F6C;&#x8D26;&#x9875;&#x9762;&#xFF0C;&#x6D4B;&#x8BD5;&#x8F6C;&#x8D26;&#x662F;&#x6210;&#x529F;&#x7684;</p>
+</blockquote>
+<h4 id="&#x653B;&#x51FB;&#x7F51;&#x7AD9;b&#x7684;&#x4EE3;&#x7801;"><a name="&#x653B;&#x51FB;&#x7F51;&#x7AD9;b&#x7684;&#x4EE3;&#x7801;" class="anchor-navigation-ex-anchor" href="#&#x653B;&#x51FB;&#x7F51;&#x7AD9;b&#x7684;&#x4EE3;&#x7801;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x653B;&#x51FB;&#x7F51;&#x7AD9;B&#x7684;&#x4EE3;&#x7801;</h4>
+<ul>
+<li>&#x540E;&#x7AEF;&#x4EE3;&#x7801;&#x5B9E;&#x73B0;</li>
+</ul>
+<div class="ace"><div class="aceCode" data-config="{&quot;edit&quot;:true,&quot;lang&quot;:&quot;python&quot;,&quot;check&quot;:false,&quot;theme&quot;:false}">from flask import Flask
+    from flask import render_template
+
+    app = Flask(__name__)
+
+    @app.route(&apos;/&apos;)
+    def index():
+        return render_template(&apos;temp_index.html&apos;)
+
+    if __name__ == &apos;__main__&apos;:
+        app.run(debug=True, port=8000)<br></div></div>
+
+<ul>
+<li>&#x524D;&#x7AEF;&#x4EE3;&#x7801;&#x5B9E;&#x73B0;</li>
+</ul>
+<div class="ace"><div class="aceCode" data-config="{&quot;edit&quot;:true,&quot;lang&quot;:&quot;python&quot;,&quot;check&quot;:false,&quot;theme&quot;:false}">&lt;!DOCTYPE html&gt;
+    &amp;lt;html lang=&quot;en&quot;&amp;gt;
+    &amp;lt;head&amp;gt;
+        &amp;lt;meta charset=&quot;UTF-8&quot;&amp;gt;
+        &amp;lt;title&amp;gt;Title&amp;lt;/title&amp;gt;
+    &amp;lt;/head&amp;gt;
+    &amp;lt;body&amp;gt;
+
+    &amp;lt;h1&amp;gt;&#x6211;&#x662F;&#x7F51;&#x7AD9;B&amp;lt;/h1&amp;gt;
+
+    &amp;lt;form method=&quot;post&quot; action=&quot;http://127.0.0.1:9000/transfer&quot;&amp;gt;
+        &amp;lt;input type=&quot;hidden&quot; name=&quot;to_account&quot; value=&quot;999999&quot;&amp;gt;
+        &amp;lt;input type=&quot;hidden&quot; name=&quot;money&quot; value=&quot;190000&quot; hidden&amp;gt;
+        &amp;lt;input type=&quot;submit&quot; value=&quot;&#x70B9;&#x51FB;&#x9886;&#x53D6;&#x4F18;&#x60E0;&#x5238;&quot;&amp;gt;
+    &amp;lt;/form&amp;gt;
+
+    &amp;lt;/body&amp;gt;
+    &amp;lt;/html&amp;gt;<br></div></div>
+
+<blockquote>
+<p>&#x8FD0;&#x884C;&#x6D4B;&#x8BD5;&#xFF0C;&#x5728;&#x7528;&#x6237;&#x767B;&#x5F55;&#x7F51;&#x7AD9;A&#x7684;&#x60C5;&#x51B5;&#x4E0B;&#xFF0C;&#x70B9;&#x51FB;&#x7F51;&#x7AD9;B&#x7684;&#x6309;&#x94AE;&#xFF0C;&#x53EF;&#x4EE5;&#x5B9E;&#x73B0;&#x4F2A;&#x9020;&#x8BBF;&#x95EE;</p>
+</blockquote>
+<h4 id="&#x5728;&#x7F51;&#x7AD9;a&#x4E2D;&#x6A21;&#x62DF;&#x5B9E;&#x73B0;-csrftoken-&#x6821;&#x9A8C;&#x7684;&#x6D41;&#x7A0B;"><a name="&#x5728;&#x7F51;&#x7AD9;a&#x4E2D;&#x6A21;&#x62DF;&#x5B9E;&#x73B0;-csrftoken-&#x6821;&#x9A8C;&#x7684;&#x6D41;&#x7A0B;" class="anchor-navigation-ex-anchor" href="#&#x5728;&#x7F51;&#x7AD9;a&#x4E2D;&#x6A21;&#x62DF;&#x5B9E;&#x73B0;-csrftoken-&#x6821;&#x9A8C;&#x7684;&#x6D41;&#x7A0B;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x5728;&#x7F51;&#x7AD9;A&#x4E2D;&#x6A21;&#x62DF;&#x5B9E;&#x73B0; csrf_token &#x6821;&#x9A8C;&#x7684;&#x6D41;&#x7A0B;</h4>
+<ul>
+<li>&#x6DFB;&#x52A0;&#x751F;&#x6210; csrf_token &#x7684;&#x51FD;&#x6570;</li>
+</ul>
+<div class="ace"><div class="aceCode" data-config="{&quot;edit&quot;:true,&quot;lang&quot;:&quot;python&quot;,&quot;check&quot;:false,&quot;theme&quot;:false}"># &#x751F;&#x6210; csrf_token &#x51FD;&#x6570;
+    def generate_csrf():
+        return bytes.decode(base64.b64encode(os.urandom(48)))<br></div></div>
+
+<ul>
+<li>&#x5728;&#x6E32;&#x67D3;&#x8F6C;&#x8D26;&#x9875;&#x9762;&#x7684;&#xFF0C;&#x505A;&#x4EE5;&#x4E0B;&#x51E0;&#x4EF6;&#x4E8B;&#x60C5;&#xFF1A;<ul>
+<li>&#x751F;&#x6210; csrf_token &#x7684;&#x503C;</li>
+<li>&#x5728;&#x8FD4;&#x56DE;&#x8F6C;&#x8D26;&#x9875;&#x9762;&#x7684;&#x54CD;&#x5E94;&#x91CC;&#x9762;&#x8BBE;&#x7F6E; csrf_token &#x5230; cookie &#x4E2D;</li>
+<li>&#x5C06; csrf_token &#x4FDD;&#x5B58;&#x5230;&#x8868;&#x5355;&#x7684;&#x9690;&#x85CF;&#x5B57;&#x6BB5;&#x4E2D;</li>
+</ul>
+</li>
+</ul>
+<div class="ace"><div class="aceCode" data-config="{&quot;edit&quot;:true,&quot;lang&quot;:&quot;python&quot;,&quot;check&quot;:false,&quot;theme&quot;:false}">@app.route(&apos;/transfer&apos;, methods=[&quot;POST&quot;, &quot;GET&quot;])
+    def transfer():
+        ...
+        # &#x751F;&#x6210; csrf_token &#x7684;&#x503C;
+        csrf_token = generate_csrf()
+
+        # &#x6E32;&#x67D3;&#x8F6C;&#x6362;&#x9875;&#x9762;&#xFF0C;&#x4F20;&#x5165; csrf_token &#x5230;&#x6A21;&#x677F;&#x4E2D;
+        response = make_response(render_template(&apos;temp_transfer.html&apos;, csrf_token=csrf_token))
+        # &#x8BBE;&#x7F6E;csrf_token&#x5230;cookie&#x4E2D;&#xFF0C;&#x7528;&#x4E8E;&#x63D0;&#x4EA4;&#x6821;&#x9A8C;
+        response.set_cookie(&apos;csrf_token&apos;, csrf_token)
+        return response<br></div></div>
+
+<ul>
+<li>&#x5728;&#x8F6C;&#x8D26;&#x6A21;&#x677F;&#x8868;&#x5355;&#x4E2D;&#x6DFB;&#x52A0; csrf_token &#x9690;&#x85CF;&#x5B57;&#x6BB5;</li>
+</ul>
+<div class="ace"><div class="aceCode" data-config="{&quot;edit&quot;:true,&quot;lang&quot;:&quot;python&quot;,&quot;check&quot;:false,&quot;theme&quot;:false}">&amp;lt;form method=&quot;post&quot;&amp;gt;
+        &amp;lt;input type=&quot;hidden&quot; name=&quot;csrf_token&quot; value=&quot;{{ csrf_token }}&quot;&amp;gt;
+        &amp;lt;label&amp;gt;&#x8D26;&#x6237;&#xFF1A;&amp;lt;/label&amp;gt;&amp;lt;input type=&quot;text&quot; name=&quot;to_account&quot; placeholder=&quot;&#x8BF7;&#x8F93;&#x5165;&#x8981;&#x8F6C;&#x8D26;&#x7684;&#x8D26;&#x6237;&quot;&amp;gt;&amp;lt;br/&amp;gt;
+        &amp;lt;label&amp;gt;&#x91D1;&#x989D;&#xFF1A;&amp;lt;/label&amp;gt;&amp;lt;input type=&quot;number&quot; name=&quot;money&quot; placeholder=&quot;&#x8BF7;&#x8F93;&#x5165;&#x8F6C;&#x8D26;&#x91D1;&#x989D;&quot;&amp;gt;&amp;lt;br/&amp;gt;
+        &amp;lt;input type=&quot;submit&quot; value=&quot;&#x8F6C;&#x8D26;&quot;&amp;gt;
+    &amp;lt;/form&amp;gt;<br></div></div>
+
+<ul>
+<li>&#x8FD0;&#x884C;&#x6D4B;&#x8BD5;&#xFF0C;&#x8FDB;&#x5165;&#x5230;&#x8F6C;&#x8D26;&#x9875;&#x9762;&#x4E4B;&#x540E;&#xFF0C;&#x67E5;&#x770B; cookie &#x548C; html &#x6E90;&#x4EE3;&#x7801;</li>
+</ul>
+<p><img src="../assets/CSRF_TOKEN&#x8BBE;&#x7F6E;&#x503C;.png" alt=""></p>
+<ul>
+<li>&#x5728;&#x6267;&#x884C;&#x8F6C;&#x8D26;&#x903B;&#x8F91;&#x4E4B;&#x524D;&#x8FDB;&#x884C; csrf_token &#x7684;&#x6821;&#x9A8C;</li>
+</ul>
+<div class="ace"><div class="aceCode" data-config="{&quot;edit&quot;:true,&quot;lang&quot;:&quot;python&quot;,&quot;check&quot;:false,&quot;theme&quot;:false}">if request.method == &quot;POST&quot;:
+        to_account = request.form.get(&quot;to_account&quot;)
+        money = request.form.get(&quot;money&quot;)
+        # &#x53D6;&#x51FA;&#x8868;&#x5355;&#x4E2D;&#x7684; csrf_token
+        form_csrf_token = request.form.get(&quot;csrf_token&quot;)
+        # &#x53D6;&#x51FA; cookie &#x4E2D;&#x7684; csrf_token
+        cookie_csrf_token = request.cookies.get(&quot;csrf_token&quot;)
+        # &#x8FDB;&#x884C;&#x5BF9;&#x6BD4;
+        if cookie_csrf_token != form_csrf_token:
+            return &apos;token&#x6821;&#x9A8C;&#x5931;&#x8D25;&#xFF0C;&#x53EF;&#x80FD;&#x662F;&#x975E;&#x6CD5;&#x64CD;&#x4F5C;&apos;
+        print(&apos;&#x5047;&#x88C5;&#x6267;&#x884C;&#x8F6C;&#x64CD;&#x4F5C;&#xFF0C;&#x5C06;&#x5F53;&#x524D;&#x767B;&#x5F55;&#x7528;&#x6237;&#x7684;&#x94B1;&#x8F6C;&#x8D26;&#x5230;&#x6307;&#x5B9A;&#x8D26;&#x6237;&apos;)
+        return &apos;&#x8F6C;&#x8D26; %s &#x5143;&#x5230; %s &#x6210;&#x529F;&apos; % (money, to_account)<br></div></div>
+
+<p>&#x8FD0;&#x884C;&#x6D4B;&#x8BD5;&#xFF0C;&#x7528;&#x6237;&#x76F4;&#x63A5;&#x5728;&#x7F51;&#x7AD9; A &#x64CD;&#x4F5C;&#x6CA1;&#x6709;&#x95EE;&#x9898;&#xFF0C;&#x518D;&#x53BB;&#x7F51;&#x7AD9;B&#x8FDB;&#x884C;&#x64CD;&#x4F5C;&#xFF0C;&#x53D1;&#x73B0;&#x8F6C;&#x8D26;&#x4E0D;&#x6210;&#x529F;&#xFF0C;&#x56E0;&#x4E3A;&#x7F51;&#x7AD9; B &#x83B7;&#x53D6;&#x4E0D;&#x5230;&#x8868;&#x5355;&#x4E2D;&#x7684; csrf_token
+&#x7684;&#x9690;&#x85CF;&#x5B57;&#x6BB5;&#xFF0C;&#x800C;&#x4E14;&#x6D4F;&#x89C8;&#x5668;&#x6709; <strong>&#x540C; &#x6E90;&#x7B56;&#x7565;</strong>&#xFF0C;&#x7F51;&#x7AD9;B&#x662F;&#x83B7;&#x53D6;&#x4E0D;&#x5230;&#x7F51;&#x7AD9;A&#x7684; cookie &#x7684;&#xFF0C;&#x6240;&#x4EE5;&#x5C31;&#x89E3;&#x51B3;&#x4E86; <strong>&#x8DE8; &#x7AD9;&#x8BF7;&#x6C42;&#x4F2A;&#x9020;</strong>&#x7684;&#x95EE;&#x9898;</p>
+<h2 id="&#x5728;-flask-&#x9879;&#x76EE;&#x4E2D;&#x89E3;&#x51B3;-csrf-&#x653B;&#x51FB;"><a name="&#x5728;-flask-&#x9879;&#x76EE;&#x4E2D;&#x89E3;&#x51B3;-csrf-&#x653B;&#x51FB;" class="anchor-navigation-ex-anchor" href="#&#x5728;-flask-&#x9879;&#x76EE;&#x4E2D;&#x89E3;&#x51B3;-csrf-&#x653B;&#x51FB;"><i class="fa fa-link" aria-hidden="true"></i></a>1.3. &#x5728; Flask &#x9879;&#x76EE;&#x4E2D;&#x89E3;&#x51B3; CSRF &#x653B;&#x51FB;</h2>
+<p>&#x5728; Flask &#x4E2D;&#xFF0C; Flask-wtf &#x6269;&#x5C55;&#x6709;&#x4E00;&#x5957;&#x5B8C;&#x5584;&#x7684; csrf &#x9632;&#x62A4;&#x4F53;&#x7CFB;&#xFF0C;&#x5BF9;&#x4E8E;&#x6211;&#x4EEC;&#x5F00;&#x53D1;&#x8005;&#x6765;&#x8BF4;&#xFF0C;&#x4F7F;&#x7528;&#x8D77;&#x6765;&#x975E;&#x5E38;&#x7B80;&#x5355;</p>
+<h3 id="&#x5728;-flaskform-&#x4E2D;&#x5B9E;&#x73B0;&#x6821;&#x9A8C;"><a name="&#x5728;-flaskform-&#x4E2D;&#x5B9E;&#x73B0;&#x6821;&#x9A8C;" class="anchor-navigation-ex-anchor" href="#&#x5728;-flaskform-&#x4E2D;&#x5B9E;&#x73B0;&#x6821;&#x9A8C;"><i class="fa fa-link" aria-hidden="true"></i></a>1.3.1. &#x5728; FlaskForm &#x4E2D;&#x5B9E;&#x73B0;&#x6821;&#x9A8C;</h3>
+<ul>
+<li>&#x8BBE;&#x7F6E;&#x5E94;&#x7528;&#x7A0B;&#x5E8F;&#x7684; secret_key<ul>
+<li>&#x7528;&#x4E8E;&#x52A0;&#x5BC6;&#x751F;&#x6210;&#x7684; csrf_token &#x7684;&#x503C;</li>
+</ul>
+</li>
+</ul>
+<div class="ace"><div class="aceCode" data-config="{&quot;edit&quot;:true,&quot;lang&quot;:&quot;python&quot;,&quot;check&quot;:false,&quot;theme&quot;:false}">app.secret_key = &quot;#&#x6B64;&#x5904;&#x53EF;&#x4EE5;&#x5199;&#x968F;&#x673A;&#x5B57;&#x7B26;&#x4E32;#&quot;<br></div></div>
+
+<ul>
+<li>&#x5728;&#x6A21;&#x677F;&#x7684;&#x8868;&#x5355;&#x4E2D;&#x6DFB;&#x52A0;&#x4EE5;&#x4E0B;&#x4EE3;&#x7801;</li>
+</ul>
+<div class="ace"><div class="aceCode" data-config="{&quot;edit&quot;:true,&quot;lang&quot;:&quot;python&quot;,&quot;check&quot;:false,&quot;theme&quot;:false}">&amp;lt;form method=&quot;post&quot;&amp;gt;
+        {{ form.csrf_token() }}
+        {{ form.username.label }} {{ form.username }}&amp;lt;br/&amp;gt;
+        {{ form.password.label }} {{ form.password }}&amp;lt;br/&amp;gt;
+        {{ form.password2.label }} {{ form.password2 }}&amp;lt;br/&amp;gt;
+        {{ form.submit }}
+    &amp;lt;/form&amp;gt;<br></div></div>
+
+<ul>
+<li>&#x6E32;&#x67D3;&#x51FA;&#x6765;&#x7684;&#x524D;&#x7AEF;&#x9875;&#x9762;&#x4E3A;&#xFF1A;</li>
+</ul>
+<p><img src="../assets/flaskwtf_csrftoken.png" alt=""></p>
+<blockquote>
+<p>&#x8BBE;&#x7F6E;&#x5B8C;&#x6BD5;&#xFF0C;cookie &#x4E2D;&#x7684; csrf_token &#x4E0D;&#x9700;&#x8981;&#x6211;&#x4EEC;&#x5173;&#x5FC3;&#xFF0C;&#x4F1A;&#x81EA;&#x52A8;&#x5E2E;&#x6211;&#x4EEC;&#x8BBE;&#x7F6E;</p>
+</blockquote>
+<h3 id="&#x5355;&#x72EC;&#x4F7F;&#x7528;"><a name="&#x5355;&#x72EC;&#x4F7F;&#x7528;" class="anchor-navigation-ex-anchor" href="#&#x5355;&#x72EC;&#x4F7F;&#x7528;"><i class="fa fa-link" aria-hidden="true"></i></a>1.3.2. &#x5355;&#x72EC;&#x4F7F;&#x7528;</h3>
+<ul>
+<li>&#x8BBE;&#x7F6E;&#x5E94;&#x7528;&#x7A0B;&#x5E8F;&#x7684; secret_key<ul>
+<li>&#x7528;&#x4E8E;&#x52A0;&#x5BC6;&#x751F;&#x6210;&#x7684; csrf_token &#x7684;&#x503C;</li>
+</ul>
+</li>
+</ul>
+<div class="ace"><div class="aceCode" data-config="{&quot;edit&quot;:true,&quot;lang&quot;:&quot;python&quot;,&quot;check&quot;:false,&quot;theme&quot;:false}">app.secret_key = &quot;#&#x6B64;&#x5904;&#x53EF;&#x4EE5;&#x5199;&#x968F;&#x673A;&#x5B57;&#x7B26;&#x4E32;#&quot;<br></div></div>
+
+<ul>
+<li>&#x5BFC;&#x5165; flask_wtf.csrf &#x4E2D;&#x7684; CSRFProtect &#x7C7B;&#xFF0C;&#x8FDB;&#x884C;&#x521D;&#x59CB;&#x5316;&#xFF0C;&#x5E76;&#x5728;&#x521D;&#x59CB;&#x5316;&#x7684;&#x65F6;&#x5019;&#x5173;&#x8054; app </li>
+</ul>
+<div class="ace"><div class="aceCode" data-config="{&quot;edit&quot;:true,&quot;lang&quot;:&quot;python&quot;,&quot;check&quot;:false,&quot;theme&quot;:false}">from flask.ext.wtf import CSRFProtect
+    CSRFProtect(app)<br></div></div>
+
+<ul>
+<li>&#x5982;&#x679C;&#x6A21;&#x677F;&#x4E2D;&#x6709;&#x8868;&#x5355;&#xFF0C;&#x4E0D;&#x9700;&#x8981;&#x505A;&#x4EFB;&#x4F55;&#x4E8B;&#x3002;&#x4E0E;&#x4E4B;&#x524D;&#x4E00;&#x6837;:</li>
+</ul>
+<div class="ace"><div class="aceCode" data-config="{&quot;edit&quot;:true,&quot;lang&quot;:&quot;python&quot;,&quot;check&quot;:false,&quot;theme&quot;:false}">&amp;lt;form method=&quot;post&quot;&amp;gt;
+        {{ form.csrf_token }}
+        ...
+    &amp;lt;/form&amp;gt;<br></div></div>
+
+<ul>
+<li>&#x4F46;&#x5982;&#x679C;&#x6A21;&#x677F;&#x4E2D;&#x6CA1;&#x6709;&#x8868;&#x5355;&#xFF0C;&#x4F60;&#x4ECD;&#x9700;&#x8981; CSRF &#x4EE4;&#x724C;:</li>
+</ul>
+<div class="ace"><div class="aceCode" data-config="{&quot;edit&quot;:true,&quot;lang&quot;:&quot;python&quot;,&quot;check&quot;:false,&quot;theme&quot;:false}">&amp;lt;form method=&quot;post&quot; action=&quot;/&quot;&amp;gt;
+        &amp;lt;input type=&quot;hidden&quot; name=&quot;csrf_token&quot; value=&quot;{{ csrf_token() }}&quot; /&amp;gt;
+    &amp;lt;/form&amp;gt;<br></div></div>
+
+<blockquote>
+<p>&#x540E;&#x7EED;&#x9879;&#x76EE;&#x4E2D;&#x4F1A;&#x4F7F;&#x7528;&#x5230;&#x6B64;&#x529F;&#x80FD;</p>
+</blockquote>
+<hr>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="flask-wtfbiao-dan.html" class="navigation navigation-prev " aria-label="Previous page: 2.8. Flask-WTF表单 ">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="../shu-ju-ku.html" class="navigation navigation-next " aria-label="Next page: 3. 数据库 ">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"2.9. CSRF ","level":"1.3.9","depth":2,"next":{"title":"3. 数据库 ","level":"1.4","depth":1,"path":"shu-ju-ku.md","ref":"./shu-ju-ku.md","articles":[{"title":"3.1. ORM ","level":"1.4.1","depth":2,"path":"shu-ju-ku/orm.md","ref":"./shu-ju-ku/orm.md","articles":[]},{"title":"3.2. Flask-SQLAlchemy安装及配置 ","level":"1.4.2","depth":2,"path":"shu-ju-ku/flask-sqlalchemyan-zhuang-ji-she-zhi.md","ref":"./shu-ju-ku/flask-sqlalchemyan-zhuang-ji-she-zhi.md","articles":[]},{"title":"3.3. 数据库的基本操作 ","level":"1.4.3","depth":2,"path":"shu-ju-ku/shu-ju-ku-de-ji-ben-cao-zuo.md","ref":"./shu-ju-ku/shu-ju-ku-de-ji-ben-cao-zuo.md","articles":[]},{"title":"3.4. 综合案例-图书管理 ","level":"1.4.4","depth":2,"path":"shu-ju-ku/zong-he-an-4f8b-tu-shu-guan-li.md","ref":"./shu-ju-ku/zong-he-an-4f8b-tu-shu-guan-li.md","articles":[{"title":"3.4.1. 定义模型 ","level":"1.4.4.1","depth":3,"path":"shu-ju-ku/zong-he-an-4f8b-tu-shu-guan-li/ding-yi-mo-xing.md","ref":"./shu-ju-ku/zong-he-an-4f8b-tu-shu-guan-li/ding-yi-mo-xing.md","articles":[]},{"title":"3.4.2. 数据库表创建 &测试数据添加 ","level":"1.4.4.2","depth":3,"path":"shu-ju-ku/zong-he-an-4f8b-tu-shu-guan-li/shu-ju-ku-biao-chuang-5efa26-ce-shi-shu-ju-tian-jia.md","ref":"./shu-ju-ku/zong-he-an-4f8b-tu-shu-guan-li/shu-ju-ku-biao-chuang-5efa26-ce-shi-shu-ju-tian-jia.md","articles":[]},{"title":"3.4.3. 数据显示 &表单添加 ","level":"1.4.4.3","depth":3,"path":"shu-ju-ku/zong-he-an-4f8b-tu-shu-guan-li/shu-ju-xian-793a26-biao-dan-tian-jia.md","ref":"./shu-ju-ku/zong-he-an-4f8b-tu-shu-guan-li/shu-ju-xian-793a26-biao-dan-tian-jia.md","articles":[]},{"title":"3.4.4. 表单验证 ","level":"1.4.4.4","depth":3,"path":"shu-ju-ku/zong-he-an-4f8b-tu-shu-guan-li/biao-dan-yan-zheng.md","ref":"./shu-ju-ku/zong-he-an-4f8b-tu-shu-guan-li/biao-dan-yan-zheng.md","articles":[]},{"title":"3.4.5. 删除数据 ","level":"1.4.4.5","depth":3,"path":"shu-ju-ku/zong-he-an-4f8b-tu-shu-guan-li/shan-chu-shu-ju.md","ref":"./shu-ju-ku/zong-he-an-4f8b-tu-shu-guan-li/shan-chu-shu-ju.md","articles":[]}]},{"title":"3.5. 多对多演练 ","level":"1.4.5","depth":2,"path":"shu-ju-ku/duo-dui-duo-yan-lian.md","ref":"./shu-ju-ku/duo-dui-duo-yan-lian.md","articles":[]},{"title":"3.6. 数据库迁移 ","level":"1.4.6","depth":2,"path":"shu-ju-ku/shu-ju-ku-qian-yi.md","ref":"./shu-ju-ku/shu-ju-ku-qian-yi.md","articles":[]},{"title":"3.7. 信号机制 ","level":"1.4.7","depth":2,"path":"shu-ju-ku/qi-ta.md","ref":"./shu-ju-ku/qi-ta.md","articles":[]},{"title":"3.8. 常见关系模板代码 ","level":"1.4.8","depth":2,"path":"shu-ju-ku/chang-jian-guan-xi-mo-ban-dai-ma.md","ref":"./shu-ju-ku/chang-jian-guan-xi-mo-ban-dai-ma.md","articles":[]}]},"previous":{"title":"2.8. Flask-WTF表单 ","level":"1.3.8","depth":2,"path":"mo-ban/flask-wtfbiao-dan.md","ref":"./mo-ban/flask-wtfbiao-dan.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["anchor-navigation-ex","ace","-lunr","-search","search-pro","-expandable-chapters","folding-menu","prism-themes","-highlight","emphasize","folding-menu","fontsettings","sharing","splitter","-toggle-chapters","livereload"],"pluginsConfig":{"emphasize":{},"ace":{},"livereload":{},"splitter":{},"search-pro":{},"folding-menu":{"animationDuration":400,"sticky":false},"fontsettings":{"family":"sans","size":2,"theme":"white"},"anchor-navigation-ex":{"associatedWithSummary":true,"float":{"level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"mode":"float","multipleH1":true,"pageTop":{"level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"printLog":false,"showGoTop":true,"showLevel":true},"prism-themes":{},"sharing":{"all":["facebook","google","twitter","weibo","instapaper"],"facebook":true,"google":false,"instapaper":false,"twitter":true,"vk":false,"weibo":false},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"mo-ban/csrf.md","mtime":"2018-09-10T15:49:38.000Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-09-10T15:54:24.839Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-ace/ace/ace.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-ace/ace.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search-pro/jquery.mark.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search-pro/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-folding-menu/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-splitter/splitter.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+
+    </body>
+</html>
+

@@ -1,0 +1,1289 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>3.3. 数据库的基本操作  · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-anchor-navigation-ex/style/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-ace/ace.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search-pro/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-emphasize/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-splitter/splitter.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="zong-he-an-4f8b-tu-shu-guan-li.html" />
+    
+    
+    <link rel="prev" href="flask-sqlalchemyan-zhuang-ji-she-zhi.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Flask框架
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../shi-tu-ji-lu-you.html">
+            
+                <a href="../shi-tu-ji-lu-you.html">
+            
+                    
+                    1. 视图及路由 
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../shi-tu-ji-lu-you/flaskjian-jie.html">
+            
+                <a href="../shi-tu-ji-lu-you/flaskjian-jie.html">
+            
+                    
+                    1.1. Flask简介 
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="../shi-tu-ji-lu-you/flaskhuan-jing-an-zhuang.html">
+            
+                <a href="../shi-tu-ji-lu-you/flaskhuan-jing-an-zhuang.html">
+            
+                    
+                    1.2. 虚拟环境 
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="../shi-tu-ji-lu-you/helloworld.html">
+            
+                <a href="../shi-tu-ji-lu-you/helloworld.html">
+            
+                    
+                    1.3. HelloWorld 
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4" data-path="../shi-tu-ji-lu-you/xiang-guan-pei-zhi-can-shu.html">
+            
+                <a href="../shi-tu-ji-lu-you/xiang-guan-pei-zhi-can-shu.html">
+            
+                    
+                    1.4. 相关配置参数 
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5" data-path="../shi-tu-ji-lu-you/lu-you-de-ge-zhong-ding-yi.html">
+            
+                <a href="../shi-tu-ji-lu-you/lu-you-de-ge-zhong-ding-yi.html">
+            
+                    
+                    1.5. 路由基本定义 
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.6" data-path="../shi-tu-ji-lu-you/shi-tu-chang-yong-luo-ji.html">
+            
+                <a href="../shi-tu-ji-lu-you/shi-tu-chang-yong-luo-ji.html">
+            
+                    
+                    1.6. 视图常用逻辑 
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.7" data-path="../shi-tu-ji-lu-you/zheng-ze-pi-pei-lu-you.html">
+            
+                <a href="../shi-tu-ji-lu-you/zheng-ze-pi-pei-lu-you.html">
+            
+                    
+                    1.7. 正则匹配路由 
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.8" data-path="../shi-tu-ji-lu-you/yi-chang-bu-huo.html">
+            
+                <a href="../shi-tu-ji-lu-you/yi-chang-bu-huo.html">
+            
+                    
+                    1.8. 异常捕获 
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.9" data-path="../shi-tu-ji-lu-you/qing-qiu-gou-zi.html">
+            
+                <a href="../shi-tu-ji-lu-you/qing-qiu-gou-zi.html">
+            
+                    
+                    1.9. 请求勾子 
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.10" data-path="../shi-tu-ji-lu-you/flaskzhuang-shi-qi-lu-you-ju-ti-shi-xian.html">
+            
+                <a href="../shi-tu-ji-lu-you/flaskzhuang-shi-qi-lu-you-ju-ti-shi-xian.html">
+            
+                    
+                    1.10. 装饰器路由具体实现 
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.11" data-path="../shi-tu-ji-lu-you/huo-qu-qing-qiu-can-shu.html">
+            
+                <a href="../shi-tu-ji-lu-you/huo-qu-qing-qiu-can-shu.html">
+            
+                    
+                    1.11. 获取请求参数 
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.12" data-path="../shi-tu-ji-lu-you/zhuang-tai-bao-chi.html">
+            
+                <a href="../shi-tu-ji-lu-you/zhuang-tai-bao-chi.html">
+            
+                    
+                    1.12. 状态保持 
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.12.1" data-path="../shi-tu-ji-lu-you/zhuang-tai-bao-chi/cookie.html">
+            
+                <a href="../shi-tu-ji-lu-you/zhuang-tai-bao-chi/cookie.html">
+            
+                    
+                    1.12.1. Cookie 
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.12.2" data-path="../shi-tu-ji-lu-you/zhuang-tai-bao-chi/session.html">
+            
+                <a href="../shi-tu-ji-lu-you/zhuang-tai-bao-chi/session.html">
+            
+                    
+                    1.12.2. Session 
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.13" data-path="../shi-tu-ji-lu-you/shang-xia-wen.html">
+            
+                <a href="../shi-tu-ji-lu-you/shang-xia-wen.html">
+            
+                    
+                    1.13. 上下文 
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.14" data-path="../shi-tu-ji-lu-you/flask-script.html">
+            
+                <a href="../shi-tu-ji-lu-you/flask-script.html">
+            
+                    
+                    1.14. Flask-Script 
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../mo-ban.html">
+            
+                <a href="../mo-ban.html">
+            
+                    
+                    2. 模板 
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../mo-ban/jinja2mo-ban-yin-qing.html">
+            
+                <a href="../mo-ban/jinja2mo-ban-yin-qing.html">
+            
+                    
+                    2.1. Jinja2简介 
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="../mo-ban/jinja2mo-ban-yin-qing-shi-yong.html">
+            
+                <a href="../mo-ban/jinja2mo-ban-yin-qing-shi-yong.html">
+            
+                    
+                    2.2. 模板的使用 
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="../mo-ban/guo-lv-qi.html">
+            
+                <a href="../mo-ban/guo-lv-qi.html">
+            
+                    
+                    2.3. 过滤器 
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4" data-path="../mo-ban/zi-ding-yi-guo-lv-qi.html">
+            
+                <a href="../mo-ban/zi-ding-yi-guo-lv-qi.html">
+            
+                    
+                    2.4. 自定义过滤器 
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5" data-path="../mo-ban/kong-zhi-dai-ma-kuai.html">
+            
+                <a href="../mo-ban/kong-zhi-dai-ma-kuai.html">
+            
+                    
+                    2.5. 控制代码块 
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.6" data-path="../mo-ban/mo-ban-dai-ma-fu-yong.html">
+            
+                <a href="../mo-ban/mo-ban-dai-ma-fu-yong.html">
+            
+                    
+                    2.6. 模板代码复用 
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.6.1" data-path="../mo-ban/mo-ban-dai-ma-fu-yong/hong.html">
+            
+                <a href="../mo-ban/mo-ban-dai-ma-fu-yong/hong.html">
+            
+                    
+                    2.6.1. 宏 
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.6.2" data-path="../mo-ban/mo-ban-dai-ma-fu-yong/ji-cheng.html">
+            
+                <a href="../mo-ban/mo-ban-dai-ma-fu-yong/ji-cheng.html">
+            
+                    
+                    2.6.2. 继承 
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.6.3" data-path="../mo-ban/mo-ban-dai-ma-fu-yong/bao-han.html">
+            
+                <a href="../mo-ban/mo-ban-dai-ma-fu-yong/bao-han.html">
+            
+                    
+                    2.6.3. 包含 
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.7" data-path="../mo-ban/te-you-bian-liang-he-han-shu.html">
+            
+                <a href="../mo-ban/te-you-bian-liang-he-han-shu.html">
+            
+                    
+                    2.7. 特有变量和函数 
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.8" data-path="../mo-ban/flask-wtfbiao-dan.html">
+            
+                <a href="../mo-ban/flask-wtfbiao-dan.html">
+            
+                    
+                    2.8. Flask-WTF表单 
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.9" data-path="../mo-ban/csrf.html">
+            
+                <a href="../mo-ban/csrf.html">
+            
+                    
+                    2.9. CSRF 
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../shu-ju-ku.html">
+            
+                <a href="../shu-ju-ku.html">
+            
+                    
+                    3. 数据库 
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="orm.html">
+            
+                <a href="orm.html">
+            
+                    
+                    3.1. ORM 
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="flask-sqlalchemyan-zhuang-ji-she-zhi.html">
+            
+                <a href="flask-sqlalchemyan-zhuang-ji-she-zhi.html">
+            
+                    
+                    3.2. Flask-SQLAlchemy安装及配置 
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.4.3" data-path="shu-ju-ku-de-ji-ben-cao-zuo.html">
+            
+                <a href="shu-ju-ku-de-ji-ben-cao-zuo.html">
+            
+                    
+                    3.3. 数据库的基本操作 
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.4" data-path="zong-he-an-4f8b-tu-shu-guan-li.html">
+            
+                <a href="zong-he-an-4f8b-tu-shu-guan-li.html">
+            
+                    
+                    3.4. 综合案例-图书管理 
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.4.1" data-path="zong-he-an-4f8b-tu-shu-guan-li/ding-yi-mo-xing.html">
+            
+                <a href="zong-he-an-4f8b-tu-shu-guan-li/ding-yi-mo-xing.html">
+            
+                    
+                    3.4.1. 定义模型 
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.4.2" data-path="zong-he-an-4f8b-tu-shu-guan-li/shu-ju-ku-biao-chuang-5efa26-ce-shi-shu-ju-tian-jia.html">
+            
+                <a href="zong-he-an-4f8b-tu-shu-guan-li/shu-ju-ku-biao-chuang-5efa26-ce-shi-shu-ju-tian-jia.html">
+            
+                    
+                    3.4.2. 数据库表创建 &测试数据添加 
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.4.3" data-path="zong-he-an-4f8b-tu-shu-guan-li/shu-ju-xian-793a26-biao-dan-tian-jia.html">
+            
+                <a href="zong-he-an-4f8b-tu-shu-guan-li/shu-ju-xian-793a26-biao-dan-tian-jia.html">
+            
+                    
+                    3.4.3. 数据显示 &表单添加 
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.4.4" data-path="zong-he-an-4f8b-tu-shu-guan-li/biao-dan-yan-zheng.html">
+            
+                <a href="zong-he-an-4f8b-tu-shu-guan-li/biao-dan-yan-zheng.html">
+            
+                    
+                    3.4.4. 表单验证 
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.4.5" data-path="zong-he-an-4f8b-tu-shu-guan-li/shan-chu-shu-ju.html">
+            
+                <a href="zong-he-an-4f8b-tu-shu-guan-li/shan-chu-shu-ju.html">
+            
+                    
+                    3.4.5. 删除数据 
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.5" data-path="duo-dui-duo-yan-lian.html">
+            
+                <a href="duo-dui-duo-yan-lian.html">
+            
+                    
+                    3.5. 多对多演练 
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.6" data-path="shu-ju-ku-qian-yi.html">
+            
+                <a href="shu-ju-ku-qian-yi.html">
+            
+                    
+                    3.6. 数据库迁移 
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.7" data-path="qi-ta.html">
+            
+                <a href="qi-ta.html">
+            
+                    
+                    3.7. 信号机制 
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.8" data-path="chang-jian-guan-xi-mo-ban-dai-ma.html">
+            
+                <a href="chang-jian-guan-xi-mo-ban-dai-ma.html">
+            
+                    
+                    3.8. 常见关系模板代码 
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../lan-tu-dan-yuan-ce-shi.html">
+            
+                <a href="../lan-tu-dan-yuan-ce-shi.html">
+            
+                    
+                    4. 蓝图 &单元测试 
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="../lan-tu-dan-yuan-ce-shi/lan-tu.html">
+            
+                <a href="../lan-tu-dan-yuan-ce-shi/lan-tu.html">
+            
+                    
+                    4.1. 蓝图 
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="../lan-tu-dan-yuan-ce-shi/dan-yuan-ce-shi.html">
+            
+                <a href="../lan-tu-dan-yuan-ce-shi/dan-yuan-ce-shi.html">
+            
+                    
+                    4.2. 单元测试 
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >3.3. 数据库的基本操作 </a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <div id="anchor-navigation-ex-navbar"><i class="fa fa-anchor"></i><ul><li><span class="title-icon "></span><a href="#&#x6570;&#x636E;&#x5E93;&#x57FA;&#x672C;&#x64CD;&#x4F5C;"><b>1. </b>&#x6570;&#x636E;&#x5E93;&#x57FA;&#x672C;&#x64CD;&#x4F5C;</a></li></ul></div><a href="#&#x6570;&#x636E;&#x5E93;&#x57FA;&#x672C;&#x64CD;&#x4F5C;" id="anchorNavigationExGoTop"><i class="fa fa-arrow-up"></i></a><h1 id="&#x6570;&#x636E;&#x5E93;&#x57FA;&#x672C;&#x64CD;&#x4F5C;"><a name="&#x6570;&#x636E;&#x5E93;&#x57FA;&#x672C;&#x64CD;&#x4F5C;" class="anchor-navigation-ex-anchor" href="#&#x6570;&#x636E;&#x5E93;&#x57FA;&#x672C;&#x64CD;&#x4F5C;"><i class="fa fa-link" aria-hidden="true"></i></a>1. &#x6570;&#x636E;&#x5E93;&#x57FA;&#x672C;&#x64CD;&#x4F5C;</h1>
+<ul>
+<li><p>&#x5728;Flask-SQLAlchemy&#x4E2D;&#xFF0C;&#x63D2;&#x5165;&#x3001;&#x4FEE;&#x6539;&#x3001;&#x5220;&#x9664;&#x64CD;&#x4F5C;&#xFF0C;&#x5747;&#x7531;&#x6570;&#x636E;&#x5E93;&#x4F1A;&#x8BDD;&#x7BA1;&#x7406;&#x3002;</p>
+<ul>
+<li>&#x4F1A;&#x8BDD;&#x7528; db.session &#x8868;&#x793A;&#x3002;&#x5728;&#x51C6;&#x5907;&#x628A;&#x6570;&#x636E;&#x5199;&#x5165;&#x6570;&#x636E;&#x5E93;&#x524D;&#xFF0C;&#x8981;&#x5148;&#x5C06;&#x6570;&#x636E;&#x6DFB;&#x52A0;&#x5230;&#x4F1A;&#x8BDD;&#x4E2D;&#x7136;&#x540E;&#x8C03;&#x7528; commit() &#x65B9;&#x6CD5;&#x63D0;&#x4EA4;&#x4F1A;&#x8BDD;&#x3002;</li>
+</ul>
+</li>
+<li><p>&#x5728; Flask-SQLAlchemy &#x4E2D;&#xFF0C;&#x67E5;&#x8BE2;&#x64CD;&#x4F5C;&#x662F;&#x901A;&#x8FC7; query &#x5BF9;&#x8C61;&#x64CD;&#x4F5C;&#x6570;&#x636E;&#x3002;</p>
+<ul>
+<li>&#x6700;&#x57FA;&#x672C;&#x7684;&#x67E5;&#x8BE2;&#x662F;&#x8FD4;&#x56DE;&#x8868;&#x4E2D;&#x6240;&#x6709;&#x6570;&#x636E;&#xFF0C;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;&#x8FC7;&#x6EE4;&#x5668;&#x8FDB;&#x884C;&#x66F4;&#x7CBE;&#x786E;&#x7684;&#x6570;&#x636E;&#x5E93;&#x67E5;&#x8BE2;&#x3002;</li>
+</ul>
+</li>
+</ul>
+<h3 id="&#x5728;&#x89C6;&#x56FE;&#x51FD;&#x6570;&#x4E2D;&#x5B9A;&#x4E49;&#x6A21;&#x578B;&#x7C7B;"><a name="&#x5728;&#x89C6;&#x56FE;&#x51FD;&#x6570;&#x4E2D;&#x5B9A;&#x4E49;&#x6A21;&#x578B;&#x7C7B;" class="anchor-navigation-ex-anchor" href="#&#x5728;&#x89C6;&#x56FE;&#x51FD;&#x6570;&#x4E2D;&#x5B9A;&#x4E49;&#x6A21;&#x578B;&#x7C7B;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x5728;&#x89C6;&#x56FE;&#x51FD;&#x6570;&#x4E2D;&#x5B9A;&#x4E49;&#x6A21;&#x578B;&#x7C7B;</h3>
+<div class="ace"><div class="aceCode" data-config="{&quot;edit&quot;:true,&quot;lang&quot;:&quot;python&quot;,&quot;check&quot;:false,&quot;theme&quot;:false}">from flask import Flask
+    from flask_sqlalchemy import SQLAlchemy
+
+
+    app = Flask(__name__)
+
+    #&#x8BBE;&#x7F6E;&#x8FDE;&#x63A5;&#x6570;&#x636E;&#x5E93;&#x7684;URL
+    app.config[&apos;SQLALCHEMY_DATABASE_URI&apos;] = &apos;mysql://root:mysql@127.0.0.1:3306/test&apos;
+
+    app.config[&apos;SQLALCHEMY_TRACK_MODIFICATIONS&apos;] = True
+    #&#x67E5;&#x8BE2;&#x65F6;&#x4F1A;&#x663E;&#x793A;&#x539F;&#x59CB;SQL&#x8BED;&#x53E5;
+    app.config[&apos;SQLALCHEMY_ECHO&apos;] = True
+    db = SQLAlchemy(app)
+
+    class Role(db.Model):
+        # &#x5B9A;&#x4E49;&#x8868;&#x540D;
+        __tablename__ = &apos;roles&apos;
+        # &#x5B9A;&#x4E49;&#x5217;&#x5BF9;&#x8C61;
+        id = db.Column(db.Integer, primary_key=True)
+        name = db.Column(db.String(64), unique=True)
+        us = db.relationship(&apos;User&apos;, backref=&apos;role&apos;)
+
+        #repr()&#x65B9;&#x6CD5;&#x663E;&#x793A;&#x4E00;&#x4E2A;&#x53EF;&#x8BFB;&#x5B57;&#x7B26;&#x4E32;
+        def __repr__(self):
+            return &apos;Role:%s&apos;% self.name
+
+    class User(db.Model):
+        __tablename__ = &apos;users&apos;
+        id = db.Column(db.Integer, primary_key=True)
+        name = db.Column(db.String(64), unique=True, index=True)
+        email = db.Column(db.String(64),unique=True)
+        password = db.Column(db.String(64))
+        role_id = db.Column(db.Integer, db.ForeignKey(&apos;roles.id&apos;))
+
+        def __repr__(self):
+            return &apos;User:%s&apos;%self.name
+    if __name__ == &apos;__main__&apos;:
+        app.run(debug=True)<br></div></div>
+
+<h3 id="&#x6A21;&#x578B;&#x4E4B;&#x524D;&#x7684;&#x5173;&#x8054;"><a name="&#x6A21;&#x578B;&#x4E4B;&#x524D;&#x7684;&#x5173;&#x8054;" class="anchor-navigation-ex-anchor" href="#&#x6A21;&#x578B;&#x4E4B;&#x524D;&#x7684;&#x5173;&#x8054;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x6A21;&#x578B;&#x4E4B;&#x524D;&#x7684;&#x5173;&#x8054;</h3>
+<h4 id="&#x4E00;&#x5BF9;&#x591A;"><a name="&#x4E00;&#x5BF9;&#x591A;" class="anchor-navigation-ex-anchor" href="#&#x4E00;&#x5BF9;&#x591A;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x4E00;&#x5BF9;&#x591A;</h4>
+<div class="ace"><div class="aceCode" data-config="{&quot;edit&quot;:true,&quot;lang&quot;:&quot;python&quot;,&quot;check&quot;:false,&quot;theme&quot;:false}">class Role(db.Model):
+        ...
+        #&#x5173;&#x952E;&#x4EE3;&#x7801;
+        us = db.relationship(&apos;User&apos;, backref=&apos;role&apos;, lazy=&apos;dynamic&apos;)
+        ...
+
+    class User(db.Model):
+        ...
+        role_id = db.Column(db.Integer, db.ForeignKey(&apos;roles.id&apos;))<br></div></div>
+
+<ul>
+<li>&#x5176;&#x4E2D;realtionship&#x63CF;&#x8FF0;&#x4E86;Role&#x548C;User&#x7684;&#x5173;&#x7CFB;&#x3002;&#x5728;&#x6B64;&#x6587;&#x4E2D;&#xFF0C;&#x7B2C;&#x4E00;&#x4E2A;&#x53C2;&#x6570;&#x4E3A;&#x5BF9;&#x5E94;&#x53C2;&#x7167;&#x7684;&#x7C7B;&quot;User&quot;</li>
+<li>&#x7B2C;&#x4E8C;&#x4E2A;&#x53C2;&#x6570;backref&#x4E3A;&#x7C7B;User&#x7533;&#x660E;&#x65B0;&#x5C5E;&#x6027;&#x7684;&#x65B9;&#x6CD5;</li>
+<li>&#x7B2C;&#x4E09;&#x4E2A;&#x53C2;&#x6570;lazy&#x51B3;&#x5B9A;&#x4E86;&#x4EC0;&#x4E48;&#x65F6;&#x5019;SQLALchemy&#x4ECE;&#x6570;&#x636E;&#x5E93;&#x4E2D;&#x52A0;&#x8F7D;&#x6570;&#x636E;<ul>
+<li>&#x5982;&#x679C;&#x8BBE;&#x7F6E;&#x4E3A;&#x5B50;&#x67E5;&#x8BE2;&#x65B9;&#x5F0F;(subquery)&#xFF0C;&#x5219;&#x4F1A;&#x5728;&#x52A0;&#x8F7D;&#x5B8C;Role&#x5BF9;&#x8C61;&#x540E;&#xFF0C;&#x5C31;&#x7ACB;&#x5373;&#x52A0;&#x8F7D;&#x4E0E;&#x5176;&#x5173;&#x8054;&#x7684;&#x5BF9;&#x8C61;&#xFF0C;&#x8FD9;&#x6837;&#x4F1A;&#x8BA9;&#x603B;&#x67E5;&#x8BE2;&#x6570;&#x91CF;&#x51CF;&#x5C11;&#xFF0C;&#x4F46;&#x5982;&#x679C;&#x8FD4;&#x56DE;&#x7684;&#x6761;&#x76EE;&#x6570;&#x91CF;&#x5F88;&#x591A;&#xFF0C;&#x5C31;&#x4F1A;&#x6BD4;&#x8F83;&#x6162;<ul>
+<li>&#x8BBE;&#x7F6E;&#x4E3A; subquery &#x7684;&#x8BDD;&#xFF0C;role.users &#x8FD4;&#x56DE;&#x6240;&#x6709;&#x6570;&#x636E;&#x5217;&#x8868;</li>
+</ul>
+</li>
+<li>&#x53E6;&#x5916;,&#x4E5F;&#x53EF;&#x4EE5;&#x8BBE;&#x7F6E;&#x4E3A;&#x52A8;&#x6001;&#x65B9;&#x5F0F;(dynamic)&#xFF0C;&#x8FD9;&#x6837;&#x5173;&#x8054;&#x5BF9;&#x8C61;&#x4F1A;&#x5728;&#x88AB;&#x4F7F;&#x7528;&#x7684;&#x65F6;&#x5019;&#x518D;&#x8FDB;&#x884C;&#x52A0;&#x8F7D;&#xFF0C;&#x5E76;&#x4E14;&#x5728;&#x8FD4;&#x56DE;&#x524D;&#x8FDB;&#x884C;&#x8FC7;&#x6EE4;&#xFF0C;&#x5982;&#x679C;&#x8FD4;&#x56DE;&#x7684;&#x5BF9;&#x8C61;&#x6570;&#x5F88;&#x591A;&#xFF0C;&#x6216;&#x8005;&#x672A;&#x6765;&#x4F1A;&#x53D8;&#x5F97;&#x5F88;&#x591A;&#xFF0C;&#x90A3;&#x6700;&#x597D;&#x91C7;&#x7528;&#x8FD9;&#x79CD;&#x65B9;&#x5F0F;<ul>
+<li>&#x8BBE;&#x7F6E;&#x4E3A; dynamic &#x7684;&#x8BDD;&#xFF0C;role.users &#x8FD4;&#x56DE;&#x67E5;&#x8BE2;&#x5BF9;&#x8C61;&#xFF0C;&#x5E76;&#x6CA1;&#x6709;&#x505A;&#x771F;&#x6B63;&#x7684;&#x67E5;&#x8BE2;&#xFF0C;&#x53EF;&#x4EE5;&#x5229;&#x7528;&#x67E5;&#x8BE2;&#x5BF9;&#x8C61;&#x505A;&#x5176;&#x4ED6;&#x903B;&#x8F91;&#xFF0C;&#x6BD4;&#x5982;&#xFF1A;&#x5148;&#x6392;&#x5E8F;&#x518D;&#x8FD4;&#x56DE;&#x7ED3;&#x679C;</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h4 id="&#x591A;&#x5BF9;&#x591A;"><a name="&#x591A;&#x5BF9;&#x591A;" class="anchor-navigation-ex-anchor" href="#&#x591A;&#x5BF9;&#x591A;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x591A;&#x5BF9;&#x591A;</h4>
+<div class="ace"><div class="aceCode" data-config="{&quot;edit&quot;:true,&quot;lang&quot;:&quot;python&quot;,&quot;check&quot;:false,&quot;theme&quot;:false}">registrations = db.Table(&apos;registrations&apos;,  
+        db.Column(&apos;student_id&apos;, db.Integer, db.ForeignKey(&apos;students.id&apos;)),  
+        db.Column(&apos;course_id&apos;, db.Integer, db.ForeignKey(&apos;courses.id&apos;))  
+    )  
+    class Course(db.Model):
+        ...
+    class Student(db.Model):
+        ...
+        courses = db.relationship(&apos;Course&apos;,secondary=registrations,  
+                                        backref=&apos;students&apos;,  
+                                        lazy=&apos;dynamic&apos;)<br></div></div>
+
+<h3 id="&#x5E38;&#x7528;&#x7684;sqlalchemy&#x67E5;&#x8BE2;&#x8FC7;&#x6EE4;&#x5668;"><a name="&#x5E38;&#x7528;&#x7684;sqlalchemy&#x67E5;&#x8BE2;&#x8FC7;&#x6EE4;&#x5668;" class="anchor-navigation-ex-anchor" href="#&#x5E38;&#x7528;&#x7684;sqlalchemy&#x67E5;&#x8BE2;&#x8FC7;&#x6EE4;&#x5668;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x5E38;&#x7528;&#x7684;SQLAlchemy&#x67E5;&#x8BE2;&#x8FC7;&#x6EE4;&#x5668;</h3>
+<table>  
+<tr>  
+<th>
+
+&#x8FC7;&#x6EE4;&#x5668;
+
+</th>  
+<th>
+
+&#x8BF4;&#x660E;
+
+</th> </tr>  
+<tr>  
+<td>
+
+filter\(\)
+
+</td>  
+<td>
+
+&#x628A;&#x8FC7;&#x6EE4;&#x5668;&#x6DFB;&#x52A0;&#x5230;&#x539F;&#x67E5;&#x8BE2;&#x4E0A;&#xFF0C;&#x8FD4;&#x56DE;&#x4E00;&#x4E2A;&#x65B0;&#x67E5;&#x8BE2;
+
+</td> </tr>  
+<tr>  
+<td>
+
+filter\_by\(\)
+
+</td>  
+<td>
+
+&#x628A;&#x7B49;&#x503C;&#x8FC7;&#x6EE4;&#x5668;&#x6DFB;&#x52A0;&#x5230;&#x539F;&#x67E5;&#x8BE2;&#x4E0A;&#xFF0C;&#x8FD4;&#x56DE;&#x4E00;&#x4E2A;&#x65B0;&#x67E5;&#x8BE2;
+
+</td> </tr>  
+<tr>  
+<td>
+
+limit
+
+</td>  
+<td>
+
+&#x4F7F;&#x7528;&#x6307;&#x5B9A;&#x7684;&#x503C;&#x9650;&#x5B9A;&#x539F;&#x67E5;&#x8BE2;&#x8FD4;&#x56DE;&#x7684;&#x7ED3;&#x679C;
+
+</td> </tr>  
+<tr>  
+<td>
+
+offset\(\)
+
+</td>  
+<td>
+
+&#x504F;&#x79FB;&#x539F;&#x67E5;&#x8BE2;&#x8FD4;&#x56DE;&#x7684;&#x7ED3;&#x679C;&#xFF0C;&#x8FD4;&#x56DE;&#x4E00;&#x4E2A;&#x65B0;&#x67E5;&#x8BE2;
+
+</td> </tr>  
+<tr>  
+<td>
+
+order\_by\(\)
+
+</td>  
+<td>
+
+&#x6839;&#x636E;&#x6307;&#x5B9A;&#x6761;&#x4EF6;&#x5BF9;&#x539F;&#x67E5;&#x8BE2;&#x7ED3;&#x679C;&#x8FDB;&#x884C;&#x6392;&#x5E8F;&#xFF0C;&#x8FD4;&#x56DE;&#x4E00;&#x4E2A;&#x65B0;&#x67E5;&#x8BE2;
+
+</td> </tr>  
+<tr>  
+<td>
+
+group\_by\(\)
+
+</td>  
+<td>
+
+&#x6839;&#x636E;&#x6307;&#x5B9A;&#x6761;&#x4EF6;&#x5BF9;&#x539F;&#x67E5;&#x8BE2;&#x7ED3;&#x679C;&#x8FDB;&#x884C;&#x5206;&#x7EC4;&#xFF0C;&#x8FD4;&#x56DE;&#x4E00;&#x4E2A;&#x65B0;&#x67E5;&#x8BE2;
+
+</td> </tr> </table>
+
+<h3 id="&#x5E38;&#x7528;&#x7684;sqlalchemy&#x67E5;&#x8BE2;&#x6267;&#x884C;&#x5668;"><a name="&#x5E38;&#x7528;&#x7684;sqlalchemy&#x67E5;&#x8BE2;&#x6267;&#x884C;&#x5668;" class="anchor-navigation-ex-anchor" href="#&#x5E38;&#x7528;&#x7684;sqlalchemy&#x67E5;&#x8BE2;&#x6267;&#x884C;&#x5668;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x5E38;&#x7528;&#x7684;SQLAlchemy&#x67E5;&#x8BE2;&#x6267;&#x884C;&#x5668;</h3>
+<table>  
+<tr>  
+<th>
+
+&#x65B9;&#x6CD5;
+
+</th>  
+<th>
+
+&#x8BF4;&#x660E;
+
+</th> </tr>  
+<tr>  
+<td>
+
+all\(\)
+
+</td>  
+<td>
+
+&#x4EE5;&#x5217;&#x8868;&#x5F62;&#x5F0F;&#x8FD4;&#x56DE;&#x67E5;&#x8BE2;&#x7684;&#x6240;&#x6709;&#x7ED3;&#x679C;
+
+</td> </tr>  
+<tr>  
+<td>
+
+first\(\)
+
+</td>  
+<td>
+
+&#x8FD4;&#x56DE;&#x67E5;&#x8BE2;&#x7684;&#x7B2C;&#x4E00;&#x4E2A;&#x7ED3;&#x679C;&#xFF0C;&#x5982;&#x679C;&#x672A;&#x67E5;&#x5230;&#xFF0C;&#x8FD4;&#x56DE;None
+
+</td> </tr>  
+<tr>  
+<td>
+
+first\_or\_404\(\)
+
+</td>  
+<td>
+
+&#x8FD4;&#x56DE;&#x67E5;&#x8BE2;&#x7684;&#x7B2C;&#x4E00;&#x4E2A;&#x7ED3;&#x679C;&#xFF0C;&#x5982;&#x679C;&#x672A;&#x67E5;&#x5230;&#xFF0C;&#x8FD4;&#x56DE;404
+
+</td> </tr>  
+<tr>  
+<td>
+
+get\(\)
+
+</td>  
+<td>
+
+&#x8FD4;&#x56DE;&#x6307;&#x5B9A;&#x4E3B;&#x952E;&#x5BF9;&#x5E94;&#x7684;&#x884C;&#xFF0C;&#x5982;&#x4E0D;&#x5B58;&#x5728;&#xFF0C;&#x8FD4;&#x56DE;None
+
+</td> </tr>  
+<tr>  
+<td>
+
+get\_or\_404\(\)
+
+</td>  
+<td>
+
+&#x8FD4;&#x56DE;&#x6307;&#x5B9A;&#x4E3B;&#x952E;&#x5BF9;&#x5E94;&#x7684;&#x884C;&#xFF0C;&#x5982;&#x4E0D;&#x5B58;&#x5728;&#xFF0C;&#x8FD4;&#x56DE;404
+
+</td> </tr>  
+<tr>  
+<td>
+
+count\(\)
+
+</td>  
+<td>
+
+&#x8FD4;&#x56DE;&#x67E5;&#x8BE2;&#x7ED3;&#x679C;&#x7684;&#x6570;&#x91CF;
+
+</td> </tr>  
+<tr>  
+<td>
+
+paginate\(\)
+
+</td>  
+<td>
+
+&#x8FD4;&#x56DE;&#x4E00;&#x4E2A;Paginate&#x5BF9;&#x8C61;&#xFF0C;&#x5B83;&#x5305;&#x542B;&#x6307;&#x5B9A;&#x8303;&#x56F4;&#x5185;&#x7684;&#x7ED3;&#x679C;
+
+</td> </tr> </table>
+
+<h3 id="&#x521B;&#x5EFA;&#x8868;&#xFF1A;"><a name="&#x521B;&#x5EFA;&#x8868;&#xFF1A;" class="anchor-navigation-ex-anchor" href="#&#x521B;&#x5EFA;&#x8868;&#xFF1A;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x521B;&#x5EFA;&#x8868;&#xFF1A;</h3>
+<div class="ace"><div class="aceCode" data-config="{&quot;edit&quot;:true,&quot;lang&quot;:&quot;python&quot;,&quot;check&quot;:false,&quot;theme&quot;:false}">db.create_all()<br></div></div>
+
+<h3 id="&#x5220;&#x9664;&#x8868;"><a name="&#x5220;&#x9664;&#x8868;" class="anchor-navigation-ex-anchor" href="#&#x5220;&#x9664;&#x8868;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x5220;&#x9664;&#x8868;</h3>
+<div class="ace"><div class="aceCode" data-config="{&quot;edit&quot;:true,&quot;lang&quot;:&quot;python&quot;,&quot;check&quot;:false,&quot;theme&quot;:false}">db.drop_all()<br></div></div>
+
+<h3 id="&#x63D2;&#x5165;&#x4E00;&#x6761;&#x6570;&#x636E;"><a name="&#x63D2;&#x5165;&#x4E00;&#x6761;&#x6570;&#x636E;" class="anchor-navigation-ex-anchor" href="#&#x63D2;&#x5165;&#x4E00;&#x6761;&#x6570;&#x636E;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x63D2;&#x5165;&#x4E00;&#x6761;&#x6570;&#x636E;</h3>
+<div class="ace"><div class="aceCode" data-config="{&quot;edit&quot;:true,&quot;lang&quot;:&quot;python&quot;,&quot;check&quot;:false,&quot;theme&quot;:false}">ro1 = Role(name=&apos;admin&apos;)
+    db.session.add(ro1)
+    db.session.commit()
+    #&#x518D;&#x6B21;&#x63D2;&#x5165;&#x4E00;&#x6761;&#x6570;&#x636E;
+    ro2 = Role(name=&apos;user&apos;)
+    db.session.add(ro2)
+    db.session.commit()<br></div></div>
+
+<h3 id="&#x4E00;&#x6B21;&#x63D2;&#x5165;&#x591A;&#x6761;&#x6570;&#x636E;"><a name="&#x4E00;&#x6B21;&#x63D2;&#x5165;&#x591A;&#x6761;&#x6570;&#x636E;" class="anchor-navigation-ex-anchor" href="#&#x4E00;&#x6B21;&#x63D2;&#x5165;&#x591A;&#x6761;&#x6570;&#x636E;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x4E00;&#x6B21;&#x63D2;&#x5165;&#x591A;&#x6761;&#x6570;&#x636E;</h3>
+<div class="ace"><div class="aceCode" data-config="{&quot;edit&quot;:true,&quot;lang&quot;:&quot;python&quot;,&quot;check&quot;:false,&quot;theme&quot;:false}">us1 = User(name=&apos;wang&apos;,email=&apos;wang@163.com&apos;,password=&apos;123456&apos;,role_id=ro1.id)
+    us2 = User(name=&apos;zhang&apos;,email=&apos;zhang@189.com&apos;,password=&apos;201512&apos;,role_id=ro2.id)
+    us3 = User(name=&apos;chen&apos;,email=&apos;chen@126.com&apos;,password=&apos;987654&apos;,role_id=ro2.id)
+    us4 = User(name=&apos;zhou&apos;,email=&apos;zhou@163.com&apos;,password=&apos;456789&apos;,role_id=ro1.id)
+    us5 = User(name=&apos;tang&apos;,email=&apos;tang@itheima.com&apos;,password=&apos;158104&apos;,role_id=ro2.id)
+    us6 = User(name=&apos;wu&apos;,email=&apos;wu@gmail.com&apos;,password=&apos;5623514&apos;,role_id=ro2.id)
+    us7 = User(name=&apos;qian&apos;,email=&apos;qian@gmail.com&apos;,password=&apos;1543567&apos;,role_id=ro1.id)
+    us8 = User(name=&apos;liu&apos;,email=&apos;liu@itheima.com&apos;,password=&apos;867322&apos;,role_id=ro1.id)
+    us9 = User(name=&apos;li&apos;,email=&apos;li@163.com&apos;,password=&apos;4526342&apos;,role_id=ro2.id)
+    us10 = User(name=&apos;sun&apos;,email=&apos;sun@163.com&apos;,password=&apos;235523&apos;,role_id=ro2.id)
+    db.session.add_all([us1,us2,us3,us4,us5,us6,us7,us8,us9,us10])
+    db.session.commit()
+
+
+    &quot;&quot;&quot;
+    &#x67E5;&#x8BE2;&#x6240;&#x6709;&#x7528;&#x6237;&#x6570;&#x636E;
+    &#x67E5;&#x8BE2;&#x6709;&#x591A;&#x5C11;&#x4E2A;&#x7528;&#x6237;
+    &#x67E5;&#x8BE2;&#x7B2C;1&#x4E2A;&#x7528;&#x6237;
+    &#x67E5;&#x8BE2;id&#x4E3A;4&#x7684;&#x7528;&#x6237;[3&#x79CD;&#x65B9;&#x5F0F;]
+    &#x67E5;&#x8BE2;&#x540D;&#x5B57;&#x7ED3;&#x5C3E;&#x5B57;&#x7B26;&#x4E3A;g&#x7684;&#x6240;&#x6709;&#x6570;&#x636E;[&#x5F00;&#x59CB;/&#x5305;&#x542B;]
+    &#x67E5;&#x8BE2;&#x540D;&#x5B57;&#x4E0D;&#x7B49;&#x4E8E;wang&#x7684;&#x6240;&#x6709;&#x6570;&#x636E;[2&#x79CD;&#x65B9;&#x5F0F;]
+    &#x67E5;&#x8BE2;&#x540D;&#x5B57;&#x548C;&#x90AE;&#x7BB1;&#x90FD;&#x4EE5; li &#x5F00;&#x5934;&#x7684;&#x6240;&#x6709;&#x6570;&#x636E;[2&#x79CD;&#x65B9;&#x5F0F;]
+    &#x67E5;&#x8BE2;password&#x662F; `123456` &#x6216;&#x8005; `email` &#x4EE5; `itheima.com` &#x7ED3;&#x5C3E;&#x7684;&#x6240;&#x6709;&#x6570;&#x636E;
+    &#x67E5;&#x8BE2;id&#x4E3A; [1, 3, 5, 7, 9] &#x7684;&#x7528;&#x6237;&#x5217;&#x8868;
+    &#x67E5;&#x8BE2;name&#x4E3A;liu&#x7684;&#x89D2;&#x8272;&#x6570;&#x636E;
+    &#x67E5;&#x8BE2;&#x6240;&#x6709;&#x7528;&#x6237;&#x6570;&#x636E;&#xFF0C;&#x5E76;&#x4EE5;&#x90AE;&#x7BB1;&#x6392;&#x5E8F;
+    &#x6BCF;&#x9875;3&#x4E2A;&#xFF0C;&#x67E5;&#x8BE2;&#x7B2C;2&#x9875;&#x7684;&#x6570;&#x636E;
+    &quot;&quot;&quot;<br></div></div>
+
+<h3 id="&#x67E5;&#x8BE2;filterby&#x7CBE;&#x786E;&#x67E5;&#x8BE2;"><a name="&#x67E5;&#x8BE2;filterby&#x7CBE;&#x786E;&#x67E5;&#x8BE2;" class="anchor-navigation-ex-anchor" href="#&#x67E5;&#x8BE2;filterby&#x7CBE;&#x786E;&#x67E5;&#x8BE2;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x67E5;&#x8BE2;:filter_by&#x7CBE;&#x786E;&#x67E5;&#x8BE2;</h3>
+<p>&#x8FD4;&#x56DE;&#x540D;&#x5B57;&#x7B49;&#x4E8E;wang&#x7684;&#x6240;&#x6709;&#x4EBA;</p>
+<div class="ace"><div class="aceCode" data-config="{&quot;edit&quot;:true,&quot;lang&quot;:&quot;python&quot;,&quot;check&quot;:false,&quot;theme&quot;:false}">User.query.filter_by(name=&apos;wang&apos;).all()<br></div></div>
+
+<p><img src="../assets/filter_by_all.png" alt="&#x8FC7;&#x6EE4;&#x540D;&#x5B57;"></p>
+<h3 id="first&#x8FD4;&#x56DE;&#x67E5;&#x8BE2;&#x5230;&#x7684;&#x7B2C;&#x4E00;&#x4E2A;&#x5BF9;&#x8C61;"><a name="first&#x8FD4;&#x56DE;&#x67E5;&#x8BE2;&#x5230;&#x7684;&#x7B2C;&#x4E00;&#x4E2A;&#x5BF9;&#x8C61;" class="anchor-navigation-ex-anchor" href="#first&#x8FD4;&#x56DE;&#x67E5;&#x8BE2;&#x5230;&#x7684;&#x7B2C;&#x4E00;&#x4E2A;&#x5BF9;&#x8C61;"><i class="fa fa-link" aria-hidden="true"></i></a>first()&#x8FD4;&#x56DE;&#x67E5;&#x8BE2;&#x5230;&#x7684;&#x7B2C;&#x4E00;&#x4E2A;&#x5BF9;&#x8C61;</h3>
+<div class="ace"><div class="aceCode" data-config="{&quot;edit&quot;:true,&quot;lang&quot;:&quot;python&quot;,&quot;check&quot;:false,&quot;theme&quot;:false}">User.query.first()<br></div></div>
+
+<h3 id="all&#x8FD4;&#x56DE;&#x67E5;&#x8BE2;&#x5230;&#x7684;&#x6240;&#x6709;&#x5BF9;&#x8C61;"><a name="all&#x8FD4;&#x56DE;&#x67E5;&#x8BE2;&#x5230;&#x7684;&#x6240;&#x6709;&#x5BF9;&#x8C61;" class="anchor-navigation-ex-anchor" href="#all&#x8FD4;&#x56DE;&#x67E5;&#x8BE2;&#x5230;&#x7684;&#x6240;&#x6709;&#x5BF9;&#x8C61;"><i class="fa fa-link" aria-hidden="true"></i></a>all()&#x8FD4;&#x56DE;&#x67E5;&#x8BE2;&#x5230;&#x7684;&#x6240;&#x6709;&#x5BF9;&#x8C61;</h3>
+<div class="ace"><div class="aceCode" data-config="{&quot;edit&quot;:true,&quot;lang&quot;:&quot;python&quot;,&quot;check&quot;:false,&quot;theme&quot;:false}">User.query.all()<br></div></div>
+
+<p><img src="../assets/query_all.png" alt="&#x67E5;&#x8BE2;&#x6240;&#x6709;&#x5BF9;&#x8C61;"></p>
+<h3 id="filter&#x6A21;&#x7CCA;&#x67E5;&#x8BE2;&#xFF0C;&#x8FD4;&#x56DE;&#x540D;&#x5B57;&#x7ED3;&#x5C3E;&#x5B57;&#x7B26;&#x4E3A;g&#x7684;&#x6240;&#x6709;&#x6570;&#x636E;&#x3002;"><a name="filter&#x6A21;&#x7CCA;&#x67E5;&#x8BE2;&#xFF0C;&#x8FD4;&#x56DE;&#x540D;&#x5B57;&#x7ED3;&#x5C3E;&#x5B57;&#x7B26;&#x4E3A;g&#x7684;&#x6240;&#x6709;&#x6570;&#x636E;&#x3002;" class="anchor-navigation-ex-anchor" href="#filter&#x6A21;&#x7CCA;&#x67E5;&#x8BE2;&#xFF0C;&#x8FD4;&#x56DE;&#x540D;&#x5B57;&#x7ED3;&#x5C3E;&#x5B57;&#x7B26;&#x4E3A;g&#x7684;&#x6240;&#x6709;&#x6570;&#x636E;&#x3002;"><i class="fa fa-link" aria-hidden="true"></i></a>filter&#x6A21;&#x7CCA;&#x67E5;&#x8BE2;&#xFF0C;&#x8FD4;&#x56DE;&#x540D;&#x5B57;&#x7ED3;&#x5C3E;&#x5B57;&#x7B26;&#x4E3A;g&#x7684;&#x6240;&#x6709;&#x6570;&#x636E;&#x3002;</h3>
+<div class="ace"><div class="aceCode" data-config="{&quot;edit&quot;:true,&quot;lang&quot;:&quot;python&quot;,&quot;check&quot;:false,&quot;theme&quot;:false}">User.query.filter(User.name.endswith(&apos;g&apos;)).all()<br></div></div>
+
+<p><img src="../assets/like_query.png" alt="&#x6A21;&#x7CCA;&#x67E5;&#x8BE2;"></p>
+<h3 id="get&#x53C2;&#x6570;&#x4E3A;&#x4E3B;&#x952E;&#xFF0C;&#x5982;&#x679C;&#x4E3B;&#x952E;&#x4E0D;&#x5B58;&#x5728;&#x6CA1;&#x6709;&#x8FD4;&#x56DE;&#x5185;&#x5BB9;"><a name="get&#x53C2;&#x6570;&#x4E3A;&#x4E3B;&#x952E;&#xFF0C;&#x5982;&#x679C;&#x4E3B;&#x952E;&#x4E0D;&#x5B58;&#x5728;&#x6CA1;&#x6709;&#x8FD4;&#x56DE;&#x5185;&#x5BB9;" class="anchor-navigation-ex-anchor" href="#get&#x53C2;&#x6570;&#x4E3A;&#x4E3B;&#x952E;&#xFF0C;&#x5982;&#x679C;&#x4E3B;&#x952E;&#x4E0D;&#x5B58;&#x5728;&#x6CA1;&#x6709;&#x8FD4;&#x56DE;&#x5185;&#x5BB9;"><i class="fa fa-link" aria-hidden="true"></i></a>get():&#x53C2;&#x6570;&#x4E3A;&#x4E3B;&#x952E;&#xFF0C;&#x5982;&#x679C;&#x4E3B;&#x952E;&#x4E0D;&#x5B58;&#x5728;&#x6CA1;&#x6709;&#x8FD4;&#x56DE;&#x5185;&#x5BB9;</h3>
+<div class="ace"><div class="aceCode" data-config="{&quot;edit&quot;:true,&quot;lang&quot;:&quot;python&quot;,&quot;check&quot;:false,&quot;theme&quot;:false}">User.query.get()<br></div></div>
+
+<h3 id="&#x903B;&#x8F91;&#x975E;&#xFF0C;&#x8FD4;&#x56DE;&#x540D;&#x5B57;&#x4E0D;&#x7B49;&#x4E8E;wang&#x7684;&#x6240;&#x6709;&#x6570;&#x636E;"><a name="&#x903B;&#x8F91;&#x975E;&#xFF0C;&#x8FD4;&#x56DE;&#x540D;&#x5B57;&#x4E0D;&#x7B49;&#x4E8E;wang&#x7684;&#x6240;&#x6709;&#x6570;&#x636E;" class="anchor-navigation-ex-anchor" href="#&#x903B;&#x8F91;&#x975E;&#xFF0C;&#x8FD4;&#x56DE;&#x540D;&#x5B57;&#x4E0D;&#x7B49;&#x4E8E;wang&#x7684;&#x6240;&#x6709;&#x6570;&#x636E;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x903B;&#x8F91;&#x975E;&#xFF0C;&#x8FD4;&#x56DE;&#x540D;&#x5B57;&#x4E0D;&#x7B49;&#x4E8E;wang&#x7684;&#x6240;&#x6709;&#x6570;&#x636E;</h3>
+<div class="ace"><div class="aceCode" data-config="{&quot;edit&quot;:true,&quot;lang&quot;:&quot;python&quot;,&quot;check&quot;:false,&quot;theme&quot;:false}">User.query.filter(User.name!=&apos;wang&apos;).all()<br></div></div>
+
+<p><img src="../assets/logic_not.png" alt="&#x903B;&#x8F91;&#x975E;"></p>
+<h3 id="not-&#x76F8;&#x5F53;&#x4E8E;&#x53D6;&#x53CD;"><a name="not-&#x76F8;&#x5F53;&#x4E8E;&#x53D6;&#x53CD;" class="anchor-navigation-ex-anchor" href="#not-&#x76F8;&#x5F53;&#x4E8E;&#x53D6;&#x53CD;"><i class="fa fa-link" aria-hidden="true"></i></a>not_ &#x76F8;&#x5F53;&#x4E8E;&#x53D6;&#x53CD;</h3>
+<div class="ace"><div class="aceCode" data-config="{&quot;edit&quot;:true,&quot;lang&quot;:&quot;python&quot;,&quot;check&quot;:false,&quot;theme&quot;:false}">from sqlalchemy import not_
+    User.query.filter(not_(User.name==&apos;chen&apos;)).all()<br></div></div>
+
+<p><img src="../assets/not.png" alt="&#x53D6;&#x53CD;"></p>
+<h3 id="&#x903B;&#x8F91;&#x4E0E;&#xFF0C;&#x9700;&#x8981;&#x5BFC;&#x5165;and&#xFF0C;&#x8FD4;&#x56DE;and&#x6761;&#x4EF6;&#x6EE1;&#x8DB3;&#x7684;&#x6240;&#x6709;&#x6570;&#x636E;"><a name="&#x903B;&#x8F91;&#x4E0E;&#xFF0C;&#x9700;&#x8981;&#x5BFC;&#x5165;and&#xFF0C;&#x8FD4;&#x56DE;and&#x6761;&#x4EF6;&#x6EE1;&#x8DB3;&#x7684;&#x6240;&#x6709;&#x6570;&#x636E;" class="anchor-navigation-ex-anchor" href="#&#x903B;&#x8F91;&#x4E0E;&#xFF0C;&#x9700;&#x8981;&#x5BFC;&#x5165;and&#xFF0C;&#x8FD4;&#x56DE;and&#x6761;&#x4EF6;&#x6EE1;&#x8DB3;&#x7684;&#x6240;&#x6709;&#x6570;&#x636E;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x903B;&#x8F91;&#x4E0E;&#xFF0C;&#x9700;&#x8981;&#x5BFC;&#x5165;and&#xFF0C;&#x8FD4;&#x56DE;and()&#x6761;&#x4EF6;&#x6EE1;&#x8DB3;&#x7684;&#x6240;&#x6709;&#x6570;&#x636E;</h3>
+<div class="ace"><div class="aceCode" data-config="{&quot;edit&quot;:true,&quot;lang&quot;:&quot;python&quot;,&quot;check&quot;:false,&quot;theme&quot;:false}">from sqlalchemy import and_
+    User.query.filter(and_(User.name!=&apos;wang&apos;,User.email.endswith(&apos;163.com&apos;))).all()<br></div></div>
+
+<p><img src="../assets/logic_and.png" alt="&#x903B;&#x8F91;&#x4E0E;"></p>
+<h3 id="&#x903B;&#x8F91;&#x6216;&#xFF0C;&#x9700;&#x8981;&#x5BFC;&#x5165;or"><a name="&#x903B;&#x8F91;&#x6216;&#xFF0C;&#x9700;&#x8981;&#x5BFC;&#x5165;or" class="anchor-navigation-ex-anchor" href="#&#x903B;&#x8F91;&#x6216;&#xFF0C;&#x9700;&#x8981;&#x5BFC;&#x5165;or"><i class="fa fa-link" aria-hidden="true"></i></a>&#x903B;&#x8F91;&#x6216;&#xFF0C;&#x9700;&#x8981;&#x5BFC;&#x5165;or_</h3>
+<div class="ace"><div class="aceCode" data-config="{&quot;edit&quot;:true,&quot;lang&quot;:&quot;python&quot;,&quot;check&quot;:false,&quot;theme&quot;:false}">from sqlalchemy import or_
+    User.query.filter(or_(User.name!=&apos;wang&apos;,User.email.endswith(&apos;163.com&apos;))).all()<br></div></div>
+
+<p><img src="../assets/logic_or.png" alt="&#x903B;&#x8F91;&#x6216;"></p>
+<h3 id="&#x67E5;&#x8BE2;&#x6570;&#x636E;&#x540E;&#x5220;&#x9664;"><a name="&#x67E5;&#x8BE2;&#x6570;&#x636E;&#x540E;&#x5220;&#x9664;" class="anchor-navigation-ex-anchor" href="#&#x67E5;&#x8BE2;&#x6570;&#x636E;&#x540E;&#x5220;&#x9664;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x67E5;&#x8BE2;&#x6570;&#x636E;&#x540E;&#x5220;&#x9664;</h3>
+<div class="ace"><div class="aceCode" data-config="{&quot;edit&quot;:true,&quot;lang&quot;:&quot;python&quot;,&quot;check&quot;:false,&quot;theme&quot;:false}">user = User.query.first()
+    db.session.delete(user)
+    db.session.commit()
+    User.query.all()<br></div></div>
+
+<h3 id="&#x66F4;&#x65B0;&#x6570;&#x636E;"><a name="&#x66F4;&#x65B0;&#x6570;&#x636E;" class="anchor-navigation-ex-anchor" href="#&#x66F4;&#x65B0;&#x6570;&#x636E;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x66F4;&#x65B0;&#x6570;&#x636E;</h3>
+<div class="ace"><div class="aceCode" data-config="{&quot;edit&quot;:true,&quot;lang&quot;:&quot;python&quot;,&quot;check&quot;:false,&quot;theme&quot;:false}">user = User.query.first()
+    user.name = &apos;dong&apos;
+    db.session.commit()
+    User.query.first()<br></div></div>
+
+<p><img src="../assets/update_data.png" alt="&#x66F4;&#x65B0;&#x6570;&#x636E;"></p>
+<h3 id="&#x5173;&#x8054;&#x67E5;&#x8BE2;&#x793A;&#x4F8B;&#xFF1A;"><a name="&#x5173;&#x8054;&#x67E5;&#x8BE2;&#x793A;&#x4F8B;&#xFF1A;" class="anchor-navigation-ex-anchor" href="#&#x5173;&#x8054;&#x67E5;&#x8BE2;&#x793A;&#x4F8B;&#xFF1A;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x5173;&#x8054;&#x67E5;&#x8BE2;&#x793A;&#x4F8B;&#xFF1A;</h3>
+<blockquote>
+<p>&#x89D2;&#x8272;&#x548C;&#x7528;&#x6237;&#x7684;&#x5173;&#x7CFB;&#x662F;&#x4E00;&#x5BF9;&#x591A;&#x7684;&#x5173;&#x7CFB;&#xFF0C;&#x4E00;&#x4E2A;&#x89D2;&#x8272;&#x53EF;&#x4EE5;&#x6709;&#x591A;&#x4E2A;&#x7528;&#x6237;&#xFF0C;&#x4E00;&#x4E2A;&#x7528;&#x6237;&#x53EA;&#x80FD;&#x5C5E;&#x4E8E;&#x4E00;&#x4E2A;&#x89D2;&#x8272;&#x3002;</p>
+</blockquote>
+<ul>
+<li>&#x67E5;&#x8BE2;&#x89D2;&#x8272;&#x7684;&#x6240;&#x6709;&#x7528;&#x6237;</li>
+</ul>
+<div class="ace"><div class="aceCode" data-config="{&quot;edit&quot;:true,&quot;lang&quot;:&quot;python&quot;,&quot;check&quot;:false,&quot;theme&quot;:false}">#&#x67E5;&#x8BE2;roles&#x8868;id&#x4E3A;1&#x7684;&#x89D2;&#x8272;
+    ro1 = Role.query.get(1)
+    #&#x67E5;&#x8BE2;&#x8BE5;&#x89D2;&#x8272;&#x7684;&#x6240;&#x6709;&#x7528;&#x6237;
+    ro1.us.all()<br></div></div>
+
+<p><img src="../assets/role_query_all.png" alt="&#x67E5;&#x8BE2;&#x89D2;&#x8272;&#x7684;&#x6240;&#x6709;&#x7528;&#x6237;"></p>
+<ul>
+<li>&#x67E5;&#x8BE2;&#x7528;&#x6237;&#x6240;&#x5C5E;&#x89D2;&#x8272;</li>
+</ul>
+<div class="ace"><div class="aceCode" data-config="{&quot;edit&quot;:true,&quot;lang&quot;:&quot;python&quot;,&quot;check&quot;:false,&quot;theme&quot;:false}">#&#x67E5;&#x8BE2;users&#x8868;id&#x4E3A;3&#x7684;&#x7528;&#x6237;
+    us1 = User.query.get(3)
+    #&#x67E5;&#x8BE2;&#x7528;&#x6237;&#x5C5E;&#x4E8E;&#x4EC0;&#x4E48;&#x89D2;&#x8272;
+    us1.role<br></div></div>
+
+<p><img src="../assets/user_in_role.png" alt="&#x67E5;&#x8BE2;&#x7528;&#x6237;&#x6240;&#x5C5E;&#x89D2;&#x8272;"></p>
+<hr>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="flask-sqlalchemyan-zhuang-ji-she-zhi.html" class="navigation navigation-prev " aria-label="Previous page: 3.2. Flask-SQLAlchemy安装及配置 ">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="zong-he-an-4f8b-tu-shu-guan-li.html" class="navigation navigation-next " aria-label="Next page: 3.4. 综合案例-图书管理 ">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"3.3. 数据库的基本操作 ","level":"1.4.3","depth":2,"next":{"title":"3.4. 综合案例-图书管理 ","level":"1.4.4","depth":2,"path":"shu-ju-ku/zong-he-an-4f8b-tu-shu-guan-li.md","ref":"./shu-ju-ku/zong-he-an-4f8b-tu-shu-guan-li.md","articles":[{"title":"3.4.1. 定义模型 ","level":"1.4.4.1","depth":3,"path":"shu-ju-ku/zong-he-an-4f8b-tu-shu-guan-li/ding-yi-mo-xing.md","ref":"./shu-ju-ku/zong-he-an-4f8b-tu-shu-guan-li/ding-yi-mo-xing.md","articles":[]},{"title":"3.4.2. 数据库表创建 &测试数据添加 ","level":"1.4.4.2","depth":3,"path":"shu-ju-ku/zong-he-an-4f8b-tu-shu-guan-li/shu-ju-ku-biao-chuang-5efa26-ce-shi-shu-ju-tian-jia.md","ref":"./shu-ju-ku/zong-he-an-4f8b-tu-shu-guan-li/shu-ju-ku-biao-chuang-5efa26-ce-shi-shu-ju-tian-jia.md","articles":[]},{"title":"3.4.3. 数据显示 &表单添加 ","level":"1.4.4.3","depth":3,"path":"shu-ju-ku/zong-he-an-4f8b-tu-shu-guan-li/shu-ju-xian-793a26-biao-dan-tian-jia.md","ref":"./shu-ju-ku/zong-he-an-4f8b-tu-shu-guan-li/shu-ju-xian-793a26-biao-dan-tian-jia.md","articles":[]},{"title":"3.4.4. 表单验证 ","level":"1.4.4.4","depth":3,"path":"shu-ju-ku/zong-he-an-4f8b-tu-shu-guan-li/biao-dan-yan-zheng.md","ref":"./shu-ju-ku/zong-he-an-4f8b-tu-shu-guan-li/biao-dan-yan-zheng.md","articles":[]},{"title":"3.4.5. 删除数据 ","level":"1.4.4.5","depth":3,"path":"shu-ju-ku/zong-he-an-4f8b-tu-shu-guan-li/shan-chu-shu-ju.md","ref":"./shu-ju-ku/zong-he-an-4f8b-tu-shu-guan-li/shan-chu-shu-ju.md","articles":[]}]},"previous":{"title":"3.2. Flask-SQLAlchemy安装及配置 ","level":"1.4.2","depth":2,"path":"shu-ju-ku/flask-sqlalchemyan-zhuang-ji-she-zhi.md","ref":"./shu-ju-ku/flask-sqlalchemyan-zhuang-ji-she-zhi.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["anchor-navigation-ex","ace","-lunr","-search","search-pro","-expandable-chapters","folding-menu","prism-themes","-highlight","emphasize","folding-menu","fontsettings","sharing","splitter","-toggle-chapters","livereload"],"pluginsConfig":{"emphasize":{},"ace":{},"livereload":{},"splitter":{},"search-pro":{},"folding-menu":{"animationDuration":400,"sticky":false},"fontsettings":{"family":"sans","size":2,"theme":"white"},"anchor-navigation-ex":{"associatedWithSummary":true,"float":{"level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"mode":"float","multipleH1":true,"pageTop":{"level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"printLog":false,"showGoTop":true,"showLevel":true},"prism-themes":{},"sharing":{"all":["facebook","google","twitter","weibo","instapaper"],"facebook":true,"google":false,"instapaper":false,"twitter":true,"vk":false,"weibo":false},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"shu-ju-ku/shu-ju-ku-de-ji-ben-cao-zuo.md","mtime":"2018-09-10T15:49:38.000Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-09-10T15:54:24.839Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-ace/ace/ace.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-ace/ace.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search-pro/jquery.mark.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search-pro/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-folding-menu/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-splitter/splitter.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+
+    </body>
+</html>
+
